@@ -24,6 +24,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "server" : "json-server -p 4000 --watch src/db/db.json",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
