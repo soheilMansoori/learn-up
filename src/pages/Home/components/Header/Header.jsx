@@ -14,7 +14,7 @@ export default function Header() {
                                 <Typewriter
                                     onInit={typeWriter => {
                                         typeWriter
-                                            .typeString("بزرگترین شبکه تدریس خصوصی در ایران !!!")
+                                            .typeString("بزرگترین شبکه <br /> تدریس خصوصی در ایران !!!")
                                             .start()
                                             .pauseFor(2000)
                                             .deleteAll()
