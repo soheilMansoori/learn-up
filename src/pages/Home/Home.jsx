@@ -1,6 +1,7 @@
 import BackToTop from '../../components/BackToTop/BackToTop'
 import Navbar from '../../components/Navbar/Navbar'
 import Header from './components/Header/Header'
+import LastBooks from './components/LastBooks/LastBooks'
 import LastCourses from './components/LastCourses/LastCourses'
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <LastCourses />
+      <LastBooks />
       <BackToTop />
     </>
   )
