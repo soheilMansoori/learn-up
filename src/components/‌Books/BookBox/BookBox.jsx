@@ -1,3 +1,5 @@
+import { OverlayTrigger, Tooltip } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 import "./BookBox.css";
 
 export default function BookBox() {
@@ -23,16 +25,45 @@ export default function BookBox() {
                 <span className="sg_rate theme-cl">179000 تومان</span>
             </div>
             <div className="shop_grid_action">
-                <a href="#" className="btn btn-shop" data-toggle="tooltip" data-placement="top" title="" data-original-title="مشاهده">
-                    <i className="fa fa-eye" />
-                </a>
-                <a href="#" className="btn btn-shop" data-toggle="tooltip" data-placement="top" title="" data-original-title="افزودن به علاقه مندی">
-                    <i className="fa fa-heart" />
-                </a>
-                <a href="#" className="btn btn-shop" data-toggle="tooltip" data-placement="top" title="" data-original-title="افزودن به سبد">
-                    <i className="fa fa-shopping-cart" />
-                </a>
+                <OverlayTrigger
+                    placement="top"
+                    overlay={
+                        <Tooltip>
+                            مشاهده
+                        </Tooltip>
+                    }
+                >
+                    <Link to="/" className="btn btn-shop">
+                        <i className="fa fa-eye" />
+                    </Link>
+                </OverlayTrigger>
+
+                <OverlayTrigger
+                    placement="top"
+                    overlay={
+                        <Tooltip>
+                            افزودن به علاقه مندی
+                        </Tooltip>
+                    }
+                >
+                    <Link to="/" className="btn btn-shop">
+                        <i className="fa fa-heart" />
+                    </Link>
+                </OverlayTrigger>
+
+                <OverlayTrigger
+                    placement="top"
+                    overlay={
+                        <Tooltip>
+                            افزودن به سبد
+                        </Tooltip>
+                    }
+                >
+                    <Link to="/" className="btn btn-shop">
+                        <i className="fa fa-shopping-cart" />
+                    </Link>
+                </OverlayTrigger>
             </div>
-        </div>
+        </div >
     )
 }
