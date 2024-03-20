@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import LastBooks from './components/LastBooks/LastBooks'
 import LastCourses from './components/LastCourses/LastCourses'
 import RoadMap from './components/RoadMap/RoadMap'
+import StudentsComments from './components/StudentsComments/StudentsComments'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <LastCourses />
       <LastBooks />
       <RoadMap />
+      <StudentsComments />
       <BackToTop />
     </>
   )
