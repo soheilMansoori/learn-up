@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import LastBlogs from './components/LastBlogs/LastBlogs'
 import LastBooks from './components/LastBooks/LastBooks'
 import LastCourses from './components/LastCourses/LastCourses'
+import NewsLetter from './components/NewsLetter/NewsLetter'
 import PartnerBrands from './components/PartnerBrands/PartnerBrands'
 import RoadMap from './components/RoadMap/RoadMap'
 import StudentsComments from './components/StudentsComments/StudentsComments'
@@ -19,6 +20,7 @@ export default function Home() {
       <StudentsComments />
       <LastBlogs />
       <PartnerBrands />
+      <NewsLetter />
       <BackToTop />
     </>
   )
