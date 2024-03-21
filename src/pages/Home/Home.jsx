@@ -1,4 +1,5 @@
 import BackToTop from '../../components/BackToTop/BackToTop'
+import Footer from '../../components/Footer/Footer'
 import Navbar from '../../components/Navbar/Navbar'
 import Header from './components/Header/Header'
 import LastBlogs from './components/LastBlogs/LastBlogs'
@@ -22,6 +23,7 @@ export default function Home() {
       <PartnerBrands />
       <NewsLetter />
       <BackToTop />
+      <Footer />
     </>
   )
 }
