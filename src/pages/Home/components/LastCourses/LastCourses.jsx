@@ -1,6 +1,8 @@
 import CourseBox from '../../../../components/Courses/CourseBox/CourseBox'
-import SectionTitle from '../SectionTitle/SectionTitle'
+import SectionTitle from '../../../../components/SectionTitle/SectionTitle'
 import './LastCourses.css'
+
+
 export default function LastCourses() {
     return (
         <section>

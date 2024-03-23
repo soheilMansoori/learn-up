@@ -1,4 +1,4 @@
-import SectionTitle from "../SectionTitle/SectionTitle";
+import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
 import Slider from 'react-slick';
 import "./PartnerBrands.css";
 

@@ -1,4 +1,4 @@
-import SectionTitle from '../SectionTitle/SectionTitle'
+import SectionTitle from '../../../../components/SectionTitle/SectionTitle'
 import StudentsCommentBox from './StudentsCommentBox/StudentsCommentBox'
 import Slider from 'react-slick'
 import './StudentsComments.css'

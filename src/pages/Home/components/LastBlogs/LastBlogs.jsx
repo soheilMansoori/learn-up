@@ -1,6 +1,6 @@
 import BlogBox from '../../../../components/‌Blogs/BlogBox/BlogBox'
-import SectionTitle from '../SectionTitle/SectionTitle'
 import Slider from 'react-slick'
+import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
 import './LastBlogs.css'
 
 export default function LastBlogs() {

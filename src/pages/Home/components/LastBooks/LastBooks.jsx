@@ -1,5 +1,5 @@
 import BookBox from '../../../../components/‌Books/BookBox/BookBox'
-import SectionTitle from '../SectionTitle/SectionTitle'
+import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
 import ShowMoreBtn from '../ShowMoreBtn/ShowMoreBtn'
 import Slider from "react-slick";
 
