@@ -1,4 +1,5 @@
 import Navbar from '../../components/Navbar/Navbar';
+import BackToTop from '../../components/BackToTop/BackToTop';
 import NewsLetter from '../../components/NewsLetter/NewsLetter';
 import Footer from '../../components/Footer/Footer';
 import { Link } from 'react-router-dom';
@@ -21,6 +22,7 @@ export default function NotFound() {
                     </div>
                 </div>
             </section>
+            <BackToTop />
             <NewsLetter />
             <Footer />
         </>
