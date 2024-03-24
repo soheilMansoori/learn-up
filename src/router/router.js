@@ -5,6 +5,7 @@ import NotFound from "../pages/NotFound/NotFound"
 import Questions from "../pages/Questions/Questions"
 import Privacy from "../pages/Privacy/Privacy"
 import Blogs from "../pages/Blogs/Blogs"
+import Login from "../pages/Login/Login"
 
 const router = [
     { path: '/', element: <Home /> },
@@ -13,6 +14,7 @@ const router = [
     { path: '/questions', element: <Questions /> },
     { path: '/privacy', element: <Privacy /> },
     { path: '/blogs', element: <Blogs /> },
+    { path: '/login', element: <Login /> },
     { path: '*', element: <NotFound /> },
 ]
 
