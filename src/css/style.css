@@ -10770,3 +10770,7 @@ a._cr_detail_arrow {
         height: 100vh;
     }
 }
+
+.z-20000{
+    z-index: 20000; 
+}
