@@ -20,12 +20,24 @@ export default function LastCourses() {
 
                 <div className="row">
                     {/* Cource Grid  */}
-                    <CourseBox />
-                    <CourseBox />
-                    <CourseBox />
-                    <CourseBox />
-                    <CourseBox />
-                    <CourseBox />
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                        <CourseBox />
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                        <CourseBox />
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                        <CourseBox />
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                        <CourseBox />
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                        <CourseBox />
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-12">
+                        <CourseBox />
+                    </div>
                 </div>
 
                 <div className="row justify-content-center">
