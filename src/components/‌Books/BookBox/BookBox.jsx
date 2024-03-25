@@ -10,7 +10,7 @@ export default function BookBox() {
 
             <div className="shop_grid_thumb">
                 <a href="#">
-                    <img src="./images/books/book-1.jpg" className="img-fluid" />
+                    <img src="/images/books/book-1.jpg" className="img-fluid" />
                 </a>
             </div>
             <div className="shop_grid_caption">
