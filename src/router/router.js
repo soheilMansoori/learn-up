@@ -9,6 +9,7 @@ import Login from "../pages/Login/Login"
 import Books from "../pages/Books/Books"
 import Courses from "../pages/Courses/Courses"
 import BlogDetails from "../pages/BlogDetails/BlogDetails"
+import CourseDetails from "../pages/CourseDetails/CourseDetails"
 
 const router = [
     { path: '/', element: <Home /> },
@@ -21,6 +22,7 @@ const router = [
     { path: '/login', element: <Login /> },
     { path: '/books', element: <Books /> },
     { path: '/courses', element: <Courses /> },
+    { path: '/course-details/:id', element: <CourseDetails /> },
     { path: '*', element: <NotFound /> },
 ]
 
