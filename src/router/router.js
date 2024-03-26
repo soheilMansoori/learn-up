@@ -12,6 +12,7 @@ import BlogDetails from "../pages/BlogDetails/BlogDetails"
 import CourseDetails from "../pages/CourseDetails/CourseDetails"
 import BookDetails from "../pages/BookDetails/BookDetails"
 import UserBasket from "../pages/UserBasket/UserBasket"
+import Register from "../pages/Register/Register"
 
 const router = [
     { path: '/', element: <Home /> },
@@ -22,6 +23,7 @@ const router = [
     { path: '/blogs', element: <Blogs /> },
     { path: '/blog-details/:id', element: <BlogDetails /> },
     { path: '/login', element: <Login /> },
+    { path: '/register', element: <Register /> },
     { path: '/books', element: <Books /> },
     { path: '/book-details/:id', element: <BookDetails /> },
     { path: '/courses', element: <Courses /> },
