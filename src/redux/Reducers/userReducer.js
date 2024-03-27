@@ -19,17 +19,8 @@ const defaultState = {
 function userReducer(state = defaultState, action = {}) {
     switch (action.type) {
         case logInUser: {
-            const { token, id, username, phone, role } = action.payload;
-            const userInfos = { token, id, username, phone, role }
-            addTokenToCookies(token) // add token to cookie
-            const newState = {
-                userID: id,
-                isLogin: true,
-                userName: username,
-                userToken: token,
-                role,
-                userInfos,
-            }
+            const newState = getNewStateData(action.payload); // create new state data and return object
+            addTokenToCookies(newState.token); // add token to cookie
             return newState
         };
         case logOutUser: {
@@ -38,7 +29,7 @@ function userReducer(state = defaultState, action = {}) {
             return newState
         };
         case refreshToken: {
-            const newState = {}
+            const newState = getNewStateData(action.payload); // create new state data and return object
             return newState
         };
         default: {
@@ -74,3 +65,17 @@ function removeTokenFromCookies() { // remove token from cookies
     const cookies = new Cookies(null, { path: '/' });
     cookies.remove('token', { path: '/' });
 };
+
+
+function getNewStateData(payload) { // create new state data
+    const { token, id, username, phone, role } = payload;
+    const newState = {
+        userID: id,
+        isLogin: true,
+        userName: username,
+        userToken: token,
+        role,
+        userInfos : { token, id, username, phone, role },
+    }
+    return newState
+}
