@@ -3,7 +3,7 @@ import { useRoutes, useLocation } from 'react-router-dom';
 import { useQuery } from 'react-query';
 import { useCookies } from 'react-cookie';
 import { useDispatch } from 'react-redux';
-import { refreshTokenAction } from './redux/Reducers/userReducer';
+import { refreshTokenAction } from './redux/reducers/userReducer';
 import router from './router/router';
 
 function App() {

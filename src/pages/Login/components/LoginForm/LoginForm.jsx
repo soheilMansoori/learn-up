@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
-import { logInUserAction } from '../../../../redux/Reducers/userReducer';
+import { logInUserAction } from '../../../../redux/reducers/userReducer';
 
 export default function LoginForm() {
     const dispatch = useDispatch()
