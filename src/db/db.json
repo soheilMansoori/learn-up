@@ -1,3 +1,12 @@
 {
-    "users": {}
+    "users": [
+        {
+            "id": 1,
+            "username": "soheil",
+            "password": "soheil1382",
+            "phone": "09109336202",
+            "role": "ADMIN",
+            "token": "cfc375cc-a86a-412b-b39d-3ba9f78b9040"
+        }
+    ]
 }
