@@ -20,7 +20,7 @@ function userReducer(state = defaultState, action = {}) {
     switch (action.type) {
         case logInUser: {
             const newState = getNewStateData(action.payload); // create new state data and return object
-            addTokenToCookies(newState.token); // add token to cookie
+            addTokenToCookies(newState.userToken); // add token to cookie
             return newState
         };
         case logOutUser: {
@@ -75,7 +75,7 @@ function getNewStateData(payload) { // create new state data
         userName: username,
         userToken: token,
         role,
-        userInfos : { token, id, username, phone, role },
+        userInfos: { token, id, username, phone, role },
     }
     return newState
 }
