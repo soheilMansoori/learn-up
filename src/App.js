@@ -12,9 +12,9 @@ function App() {
   const routes = useRoutes(router); // page routes
   const [mainCookie] = useCookies(["token"]); // get token from cookie
   const { data, isFetched } = useQuery("main-user", () => fetch(`${process.env.REACT_APP_BASE_URL}/users?token=${mainCookie.token}`).then(res => res.json()));
-  
+
   useEffect(() => { // handel a refresh token
-    if (mainCookie.token) {
+    if (mainCookie.token && data?.length) {
       isFetched && dispatch(refreshTokenAction(data[0])) // dispatch the refresh token action
     } else {
 
