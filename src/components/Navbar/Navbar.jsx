@@ -6,14 +6,28 @@ export default function Navbar() {
     const navigate = useNavigate()
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [isShowMenu, setIsShowMenu] = useState(false);
+    const [isFixNavbar, setIsFixNavbar] = useState(false);
     const [searchValue, setSearchValue] = useState("");
     const [isOpenSubmenu, setIsOpenSubmenu] = useState(false);
 
     // fix responsive  
     useEffect(() => {
         const resizeHandler = () => setWindowWidth(window.innerWidth)
+        const scrollHandler = () => {
+            let scroll = window.scrollY;
+            if (scroll >= 50) {
+                setIsFixNavbar(true);
+            } else {
+                setIsFixNavbar(false);
+            }
+        }
+        // event listener handlers
         window.addEventListener('resize', resizeHandler);
-        return () => window.removeEventListener('resize', resizeHandler);
+        window.addEventListener('scroll', scrollHandler);
+        return () => { // save  performance
+            window.removeEventListener('resize', resizeHandler);
+            window.removeEventListener('scroll', scrollHandler);
+        }
     }, [])
 
     // search handler
@@ -25,7 +39,7 @@ export default function Navbar() {
     }
     return (
         <>
-            <div className="header header-light head-shadow">
+            <div className={`header header-light  ${isFixNavbar ? "header-fixed" : "head-shadow"}`}>
                 <div className="container-fluid">
                     <nav className={`navigation  ${windowWidth > 1400 ? "navigation-landscape" : "navigation-portrait"}`}>
                         {/* logo and menu icon */}
