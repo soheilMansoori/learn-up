@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './Navbar.css'
+import { useSelector } from 'react-redux';
+import './Navbar.css';
 
 export default function Navbar() {
+    const user = useSelector(store => store.user); // get user state
     const navigate = useNavigate()
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [isShowMenu, setIsShowMenu] = useState(false);
@@ -83,39 +85,40 @@ export default function Navbar() {
                                 <li>
                                     <a href="#">لیست مدرس ها</a>
                                 </li>
-
-                                <li onMouseEnter={() => setIsOpenSubmenu(true)}>
-                                    <a href="#">
-                                        پنل کاربری
-                                        <span className="submenu-indicator" />
-                                        <span className="submenu-indicator" onClick={() => setIsOpenSubmenu(prevState => !prevState)}>
-                                            <span className="submenu-indicator-chevron" />
-                                        </span>
-                                    </a>
-                                    <ul onMouseLeave={() => setIsOpenSubmenu(false)} className={`nav-dropdown nav-submenu ${isOpenSubmenu && "d-block"}`}>
-                                        <li>
-                                            <a href="#">داشبورد</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">حساب کاربری من</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">دوره های من</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">سفارشات من</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">دوره های موردعلاقه</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">امتیازات من</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">تنظیمات</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                {user.isLogin && (
+                                    <li onMouseEnter={() => setIsOpenSubmenu(true)}>
+                                        <a href="#">
+                                            پنل کاربری
+                                            <span className="submenu-indicator" />
+                                            <span className="submenu-indicator" onClick={() => setIsOpenSubmenu(prevState => !prevState)}>
+                                                <span className="submenu-indicator-chevron" />
+                                            </span>
+                                        </a>
+                                        <ul onMouseLeave={() => setIsOpenSubmenu(false)} className={`nav-dropdown nav-submenu ${isOpenSubmenu && "d-block"}`}>
+                                            <li>
+                                                <a href="#">داشبورد</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">حساب کاربری من</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">دوره های من</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">سفارشات من</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">دوره های موردعلاقه</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">امتیازات من</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">تنظیمات</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                )}
                             </ul>
                             {/* search input and login btn */}
                             <ul className="nav-menu nav-menu-social align-to-left">
@@ -135,7 +138,11 @@ export default function Navbar() {
                                     </form>
                                 </li>
                                 <li className="login_click bg-red">
-                                    <a href="#">ثبت نام |‌ ورود</a>
+                                    {user.isLogin ? (
+                                        <a>{user.userName}</a>
+                                    ) : (
+                                        <Link to="/login">ثبت نام |‌ ورود</Link>
+                                    )}
                                 </li>
                             </ul>
                         </div>
@@ -144,8 +151,8 @@ export default function Navbar() {
                             <div onClick={() => setIsShowMenu(false)} className="nav-overlay-panel d-block gray-shadow-color" />
                         )}
                     </nav>
-                </div>
-            </div>
+                </div >
+            </div >
         </>
     );
 }
