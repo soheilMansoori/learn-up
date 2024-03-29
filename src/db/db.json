@@ -9,10 +9,21 @@
       "token": "cfc375cc-a86a-412b-b39d-3ba9f78b9040"
     }
   ],
+  "teachers": [
+    {
+      "id": "1",
+      "username": "",
+      "profileImage": "",
+      "teacherDescription": "",
+      "aboutTeacher": "",
+      "socialsLinks": [],
+      "expertise": ""
+    }
+  ],
   "courses": [
     {
       "id": "1",
-      "teacherId": "",
+      "teacherId": "1",
       "courseName": "",
       "image": "",
       "price": "",
