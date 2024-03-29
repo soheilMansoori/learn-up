@@ -12,29 +12,135 @@
   "teachers": [
     {
       "id": "1",
-      "username": "",
-      "profileImage": "",
-      "teacherDescription": "",
+      "username": "مهرداد عظیمی",
+      "profileImage": "/images/teachers/teacher-1.jpg",
+      "teacherDescription": "اولین کدم رو 14 سالگی زدم، حدود 9 سال پیش که با زبان ویژوال بیسیک بود و بعد حدودا 2 سال تو فیلد برنامه نویسی موبایل با زبان جاوا کار کردم و در نهایت با عشقی به اسم جاوا اسکریپت آشنا شدم و حدودا یه 7 سالی هست جاوا اسکریپت کد می‌زنم و به صورت Mern Stack فعالیت می‌کنم.",
       "aboutTeacher": "",
       "socialsLinks": [],
-      "expertise": ""
+      "expertise": "برنامه نویس فول استک",
+      "slug": "1"
     }
   ],
   "courses": [
     {
       "id": "1",
       "teacherId": "1",
-      "courseName": "",
-      "image": "",
-      "price": "",
-      "tags": [],
-      "watchTime": "",
-      "viewCount": "",
-      "studentCount": "",
-      "lastUpdateTime": "",
+      "courseName": "دوره جامع و کامل node.js",
+      "image": "/images/courses/node.jpg",
+      "price": "15000000",
+      "tags": [
+        "<li className='facts-1'>متخصص</li>",
+        "<li className='facts-2'>بک اند</li>",
+        "<li className='facts-3'>طراح وب</li>"
+      ],
+      "watchTime": "150",
+      "viewCount": "600",
+      "studentCount": "34",
+      "lastUpdateTime": "15 مهر",
       "description": "",
       "descriptionTemplate": "",
-      "courseFeatures": {}
+      "courseFeatures": {},
+      "slug": "1"
+    },
+    {
+      "id": "2",
+      "teacherId": "1",
+      "courseName": "دوره جامع و کامل laravel.php",
+      "image": "/images/courses/laravel.jpg",
+      "price": "800000",
+      "tags": [
+        "<li className='facts-1'>متخصص</li>",
+        "<li className='facts-2'>بک اند</li>",
+        "<li className='facts-3'>طراح وب</li>"
+      ],
+      "watchTime": "80",
+      "viewCount": "10000",
+      "studentCount": "100",
+      "lastUpdateTime": "12 تیر",
+      "description": "",
+      "descriptionTemplate": "",
+      "courseFeatures": {},
+      "slug": "2"
+    },
+    {
+      "id": "3",
+      "teacherId": "1",
+      "courseName": "دوره جامع و کامل react.js",
+      "image": "/images/courses/react.jpg",
+      "price": "1500000",
+      "tags": [
+        "<li className='facts-1'>متخصص</li>",
+        "<li className='facts-2'>فرانت اند</li>",
+        "<li className='facts-3'>طراح وب</li>"
+      ],
+      "watchTime": "99",
+      "viewCount": "80000",
+      "studentCount": "1400",
+      "lastUpdateTime": "18 شهریور",
+      "description": "",
+      "descriptionTemplate": "",
+      "courseFeatures": {},
+      "slug": "3"
+    },
+    {
+      "id": "4",
+      "teacherId": "1",
+      "courseName": "دوره جامع و کامل tailwind.css",
+      "image": "/images/courses/tailwind.jpg",
+      "price": "40000",
+      "tags": [
+        "<li className='facts-1'>متخصص</li>",
+        "<li className='facts-2'>فرانت اند</li>",
+        "<li className='facts-3'>طراح وب</li>"
+      ],
+      "watchTime": "30",
+      "viewCount": "5000",
+      "studentCount": "110",
+      "lastUpdateTime": "4 آذر",
+      "description": "",
+      "descriptionTemplate": "",
+      "courseFeatures": {},
+      "slug": "4"
+    },
+    {
+      "id": "5",
+      "teacherId": "1",
+      "courseName": "دوره جامع و کامل python",
+      "image": "/images/courses/python.jpg",
+      "price": "free",
+      "tags": [
+        "<li className='facts-1'>متخصص</li>",
+        "<li className='facts-2'>بک اند</li>",
+        "<li className='facts-3'>طراح وب</li>"
+      ],
+      "watchTime": "70",
+      "viewCount": "700000",
+      "studentCount": "800",
+      "lastUpdateTime": "13 فروردین",
+      "description": "",
+      "descriptionTemplate": "",
+      "courseFeatures": {},
+      "slug": "5"
+    },
+    {
+      "id": "6",
+      "teacherId": "1",
+      "courseName": "دوره جامع و کامل  django.py",
+      "image": "/images/courses/django.jpg",
+      "price": "1500000",
+      "tags": [
+        "<li className='facts-1'>متخصص</li>",
+        "<li className='facts-2'>بک اند</li>",
+        "<li className='facts-3'>طراح وب</li>"
+      ],
+      "watchTime": "120",
+      "viewCount": "200000",
+      "studentCount": "300",
+      "lastUpdateTime": "8 آبان",
+      "description": "",
+      "descriptionTemplate": "",
+      "courseFeatures": {},
+      "slug": "6"
     }
   ]
 }
