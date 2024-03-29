@@ -8,5 +8,22 @@
       "role": "ADMIN",
       "token": "cfc375cc-a86a-412b-b39d-3ba9f78b9040"
     }
+  ],
+  "courses": [
+    {
+      "id": "1",
+      "teacherId": "",
+      "courseName": "",
+      "image": "",
+      "price": "",
+      "tags": [],
+      "watchTime": "",
+      "viewCount": "",
+      "studentCount": "",
+      "lastUpdateTime": "",
+      "description": "",
+      "descriptionTemplate": "",
+      "courseFeatures": {}
+    }
   ]
 }
