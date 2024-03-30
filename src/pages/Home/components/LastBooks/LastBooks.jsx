@@ -1,11 +1,14 @@
-import BookBox from '../../../../components/‌Books/BookBox/BookBox'
+import BookBox from '../../../../components/‌Books/BookBox/BookBox';
 import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
 import ShowMoreBtn from '../ShowMoreBtn/ShowMoreBtn'
 import Slider from "react-slick";
+import { useQuery } from 'react-query';
 
 import './LastBooks.css'
 
 export default function LastBooks() {
+    const { data } = useQuery(["last-books"], () => fetch(`${process.env.REACT_APP_BASE_URL}/books?_limit=8`).then(res => res.json()))
+    console.log('data => ', data);
     const settings = {
         slidesToShow: 4,
         infinity: false,
@@ -52,29 +55,30 @@ export default function LastBooks() {
                     }
                 />
                 <div className='slider-container'>
-                    <Slider {...settings} className="row gap-5">
-                        <div className='col-12'>
-                            <BookBox />
-                        </div>
-                        <div className='col-12'>
-                            <BookBox />
-                        </div>
-                        <div className='col-12'>
-                            <BookBox />
-                        </div>
-                        <div className='col-12'>
-                            <BookBox />
-                        </div>
-                        <div className='col-12'>
-                            <BookBox />
-                        </div>
-                        <div className='col-12'>
-                            <BookBox />
-                        </div>
-                    </Slider>
+                    {data?.length ? (
+                        <>
+                            {data?.length > 4 ? (
+                                <Slider {...settings} className="row gap-5">
+                                    {data.map(book => (
+                                        <div className='col-12' key={book.id}>
+                                            <BookBox {...book} />
+                                        </div>
+                                    ))}
+                                </Slider>
+                            ) : (
+                                <div className='row'>
+                                    {data.map(book => (
+                                        <div className='col-12 col-md-6 col-lg-3' key={book.id}>
+                                            <BookBox {...book} />
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </>
+                    ) : null}
                 </div>
 
-                <ShowMoreBtn title='فهرست کامل کتاب ها' link='/' />
+                <ShowMoreBtn title='فهرست کامل کتاب ها' link='/books' />
             </div>
         </section>
     )
