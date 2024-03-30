@@ -3861,6 +3861,11 @@ ul.cources_facts_list li {
     margin-left: 0.8rem;
 }
 
+ul.cources_facts_list div {
+    display: inline-block;
+    margin-left: 0.8rem;
+}
+
 ul.cources_facts_list li:last-child {
     margin-right: 0rem;
 }

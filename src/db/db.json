@@ -29,9 +29,18 @@
       "image": "/images/courses/node.jpg",
       "price": "15000000",
       "tags": [
-        "<li className='facts-1'>متخصص</li>",
-        "<li className='facts-2'>بک اند</li>",
-        "<li className='facts-3'>طراح وب</li>"
+        {
+          "name": "متخصص",
+          "class": "facts-1"
+        },
+        {
+          "name": "بک اند",
+          "class": "facts-2"
+        },
+        {
+          "name": "طراحی وب",
+          "class": "facts-3"
+        }
       ],
       "watchTime": "150",
       "viewCount": "600",
@@ -49,9 +58,18 @@
       "image": "/images/courses/laravel.jpg",
       "price": "800000",
       "tags": [
-        "<li className='facts-1'>متخصص</li>",
-        "<li className='facts-2'>بک اند</li>",
-        "<li className='facts-3'>طراح وب</li>"
+        {
+          "name": "متخصص",
+          "class": "facts-1"
+        },
+        {
+          "name": "بک اند",
+          "class": "facts-2"
+        },
+        {
+          "name": "طراحی وب",
+          "class": "facts-3"
+        }
       ],
       "watchTime": "80",
       "viewCount": "10000",
@@ -69,9 +87,18 @@
       "image": "/images/courses/react.jpg",
       "price": "1500000",
       "tags": [
-        "<li className='facts-1'>متخصص</li>",
-        "<li className='facts-2'>فرانت اند</li>",
-        "<li className='facts-3'>طراح وب</li>"
+        {
+          "name": "متخصص",
+          "class": "facts-1"
+        },
+        {
+          "name": "فرانت اند",
+          "class": "facts-2"
+        },
+        {
+          "name": "طراحی وب",
+          "class": "facts-3"
+        }
       ],
       "watchTime": "99",
       "viewCount": "80000",
@@ -89,9 +116,18 @@
       "image": "/images/courses/tailwind.jpg",
       "price": "40000",
       "tags": [
-        "<li className='facts-1'>متخصص</li>",
-        "<li className='facts-2'>فرانت اند</li>",
-        "<li className='facts-3'>طراح وب</li>"
+        {
+          "name": "متخصص",
+          "class": "facts-1"
+        },
+        {
+          "name": "فرانت اند",
+          "class": "facts-2"
+        },
+        {
+          "name": "طراحی وب",
+          "class": "facts-3"
+        }
       ],
       "watchTime": "30",
       "viewCount": "5000",
@@ -109,9 +145,18 @@
       "image": "/images/courses/python.jpg",
       "price": "free",
       "tags": [
-        "<li className='facts-1'>متخصص</li>",
-        "<li className='facts-2'>بک اند</li>",
-        "<li className='facts-3'>طراح وب</li>"
+        {
+          "name": "متخصص",
+          "class": "facts-1"
+        },
+        {
+          "name": "بک اند",
+          "class": "facts-2"
+        },
+        {
+          "name": "طراحی وب",
+          "class": "facts-3"
+        }
       ],
       "watchTime": "70",
       "viewCount": "700000",
@@ -129,9 +174,18 @@
       "image": "/images/courses/django.jpg",
       "price": "1500000",
       "tags": [
-        "<li className='facts-1'>متخصص</li>",
-        "<li className='facts-2'>بک اند</li>",
-        "<li className='facts-3'>طراح وب</li>"
+        {
+          "name": "متخصص",
+          "class": "facts-1"
+        },
+        {
+          "name": "بک اند",
+          "class": "facts-2"
+        },
+        {
+          "name": "طراحی وب",
+          "class": "facts-3"
+        }
       ],
       "watchTime": "120",
       "viewCount": "200000",

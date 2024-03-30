@@ -1,45 +1,47 @@
+import { Link } from 'react-router-dom'
 import './CourseBox.css'
-export default function CourseBox() {
+export default function CourseBox({ courseName, image, price, slug, teacher: { username: teacherName, profileImage: teacherProfile, slug: teacherSlug } = {}, viewCount, watchTime, lastUpdateTime, tags }) {
     return (
         <div className="education_block_grid style_2">
             <div className="education_block_thumb n-shadow">
-                <a href="#">
-                    <img src="./images/courses/course-1.jpg" className="img-fluid" />
-                </a>
+                <Link to={`/course-details/${slug}`}>
+                    <img src={image} className="img-fluid w-100" />
+                </Link>
             </div>
             <div className="education_block_body">
                 <h4 className="bl-title">
-                    <a href="course-detail.html">آموزش ساخت فروشگاه دیجی استایل با لاراول</a>
+                    <Link to={`/course-details/${slug}`}>{courseName}</Link>
                 </h4>
             </div>
             <div className="cources_facts">
                 <ul className="cources_facts_list">
-                    <li className="facts-1">متخصص</li>
-                    <li className="facts-2">حرفه ای</li>
-                    <li className="facts-5">طراحی وب</li>
+                    {tags?.length ? tags.map((tag, index) => <li className={tag.class} key={index}>{tag.name}</li>) : null}
                 </ul>
             </div>
             <div className="cources_info">
                 <div className="cources_info_first">
                     <ul>
-                        <li><strong>1,84684 بازدید</strong></li>
-                        <li className="theme-cl">214 ساعت</li>
+                        <li><strong>{Number(viewCount).toLocaleString()} بازدید</strong></li>
+                        <li className="theme-cl">{watchTime} ساعت</li>
                     </ul>
                 </div>
                 <div className="cources_info_last">
-                    <h3>785 تومان</h3>
+                    <h3>{price == "free" ? "رایگان" : Number(price).toLocaleString() + " تومان"} </h3>
                 </div>
             </div>
             <div className="education_block_footer">
                 <div className="education_block_author">
                     <div className="path-img">
-                        <a href="#">
-                            <img src="./images/teachers/teacher-1.jpg" className="img-fluid" alt="" />
-                        </a>
+                        <Link to={`/teacher-details/${teacherSlug}`}>
+                            <img src={teacherProfile} className="img-fluid w-100" />
+                        </Link>
                     </div>
-                    <h5><a href="#">مهرداد عظیمی</a></h5>
+                    <h5><Link to={`/teacher-details/${teacherSlug}`}>{teacherName}</Link></h5>
                 </div>
-                <span className="education_block_time"><i className="fa fa-calendar ml-1"></i>1 ساعت پیش</span>
+                <span className="education_block_time">
+                    <i className="fa fa-calendar ml-2" />
+                    {lastUpdateTime}
+                </span>
             </div>
         </div>
     )
