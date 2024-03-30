@@ -20,9 +20,9 @@ export default function BookBox({ bookName, image, price, isVip, isNew, score, s
                 <div className="shop_grid_rate">
                     {Array.from({ length: "5" }, (item, index) => index + 1).map(item => {
                         if (item <= score) {
-                            return <i className="fas fa-star filled" />
+                            return <i key={item} className="fas fa-star filled" />
                         }
-                        return <i className="fas fa-star" />
+                        return <i key={item} className="fas fa-star" />
                     })}
                 </div>
                 <span className="sg_rate theme-cl">{Number(price).toLocaleString()} تومان</span>

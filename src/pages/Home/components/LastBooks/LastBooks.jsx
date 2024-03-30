@@ -8,7 +8,6 @@ import './LastBooks.css'
 
 export default function LastBooks() {
     const { data } = useQuery(["last-books"], () => fetch(`${process.env.REACT_APP_BASE_URL}/books?_limit=8`).then(res => res.json()))
-    console.log('data => ', data);
     const settings = {
         slidesToShow: 4,
         infinity: false,
