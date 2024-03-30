@@ -1,9 +1,11 @@
 import SectionTitle from '../../../../components/SectionTitle/SectionTitle'
 import StudentsCommentBox from './StudentsCommentBox/StudentsCommentBox'
 import Slider from 'react-slick'
+import { useQuery } from 'react-query'
 import './StudentsComments.css'
 
 export default function StudentsComments() {
+    const { data } = useQuery(['best-comments'], () => fetch(`${process.env.REACT_APP_BASE_URL}/bestComments?_embed=user&_limit=6`).then(res => res.json()))
     const settings = {
         slidesToShow: 1,
         autoplaySpeed: 5000,
@@ -31,14 +33,19 @@ export default function StudentsComments() {
                     }
                 />
                 <div className='slider-container'>
-                    <Slider {...settings}>
-                        <StudentsCommentBox />
-                        <StudentsCommentBox />
-                        <StudentsCommentBox />
-                        <StudentsCommentBox />
-                        <StudentsCommentBox />
-                    </Slider>
-
+                    {data?.length ? (
+                        <>
+                            {data?.length > 1 ? (
+                                <Slider {...settings}>
+                                    {data.map(comment => (
+                                        <StudentsCommentBox key={comment.id} {...comment} />
+                                    ))}
+                                </Slider>
+                            ) : (
+                                <StudentsCommentBox {...data} />
+                            )}
+                        </>
+                    ) : null}
                 </div>
             </div>
         </section >

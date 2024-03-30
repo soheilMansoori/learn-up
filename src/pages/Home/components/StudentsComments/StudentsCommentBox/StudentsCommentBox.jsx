@@ -1,17 +1,17 @@
-export default function StudentsCommentBox() {
+export default function StudentsCommentBox({ comment:commentBody, user: { task='کاربر', username: studentName, profileImage = "/images/users/default.jpg" } = {} }) {
     return (
         <div className="testimonial-detail">
             <div className="client-detail-box">
                 <div className="pic">
-                    <img src="./images/teachers/teacher-1.jpg" />
+                    <img src={profileImage} />
                 </div>
                 <div className="client-detail">
-                    <h3 className="testimonial-title">نازنین عبدی</h3>
-                    <span className="post">طراح وب</span>
+                    <h3 className="testimonial-title">{studentName}</h3>
+                    <span className="post">{task}</span>
                 </div>
             </div>
             <p className="description">
-                " چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. "
+                {commentBody}
             </p>
         </div>
     )
