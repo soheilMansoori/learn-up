@@ -1,8 +1,10 @@
 import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
 import Slider from 'react-slick';
+import { useQuery } from 'react-query';
 import "./PartnerBrands.css";
 
 export default function PartnerBrands() {
+  const { data } = useQuery(['partners'], () => fetch(`${process.env.REACT_APP_BASE_URL}/partners?_limit=7`).then(res => res.json()));
   const settings = {
     slidesToShow: 5,
     autoplaySpeed: 5000,
@@ -46,30 +48,28 @@ export default function PartnerBrands() {
             </>
           }
         />
-        <Slider {...settings}>
-          <div className="single_brands">
-            <img src="./images/Home/PartnerBrands/brand-1.png" />
-          </div>
-          <div className="single_brands">
-            <img src="./images/Home/PartnerBrands/brand-1.png" />
-          </div>
-          <div className="single_brands">
-            <img src="./images/Home/PartnerBrands/brand-1.png" />
-          </div>
-          <div className="single_brands">
-            <img src="./images/Home/PartnerBrands/brand-1.png" />
-          </div>
-          <div className="single_brands">
-            <img src="./images/Home/PartnerBrands/brand-1.png" />
-          </div>
-          <div className="single_brands">
-            <img src="./images/Home/PartnerBrands/brand-1.png" />
-          </div>
-          <div className="single_brands">
-            <img src="./images/Home/PartnerBrands/brand-1.png" />
-          </div>
-        </Slider>
+        {data?.length ? (
+          <>
+            {data.length >= 5 ? (
+              <Slider {...settings}>
+                {data.map((brand) => (
+                  <div key={brand.id} className="single_brands">
+                    <img src={brand.image} />
+                  </div>
+                ))}
+              </Slider>
+            ) : (
+              <div className="row">
+                {data.map(brand => (
+                  <div className="col-12 col-md-6 col-lg-3 single_brands mb-3 mb-lg-0" key={brand.id}>
+                    <img src={brand.image} />
+                  </div>
+                ))}
+              </div>
+            )}
+          </>
+        ) : null}
       </div>
-    </section>
+    </section >
   );
 }
