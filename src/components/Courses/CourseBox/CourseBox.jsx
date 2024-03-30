@@ -5,7 +5,7 @@ export default function CourseBox({ courseName, image, price, slug, teacher: { u
         <div className="education_block_grid style_2">
             <div className="education_block_thumb n-shadow">
                 <Link to={`/course-details/${slug}`}>
-                    <img src={image} className="img-fluid w-100" />
+                    <img src={image} className="img-fluid w-100 max-h-200" />
                 </Link>
             </div>
             <div className="education_block_body">

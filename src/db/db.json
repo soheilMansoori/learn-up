@@ -196,5 +196,18 @@
       "courseFeatures": {},
       "slug": "6"
     }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "bookName": "",
+      "image": "",
+      "price": "",
+      "score": "",
+      "description": "",
+      "bookCode": "",
+      "category": "",
+      "slug": "1"
+    }
   ]
 }
