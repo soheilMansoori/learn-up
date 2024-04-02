@@ -19,7 +19,7 @@ export default function Blogs() {
                     <div className="row">
                         {blogs?.length ? (
                             blogs.map((blog, index) => (
-                                <div className="col-lg-4 col-md-4 col-sm-12" key={index}>
+                                <div className="col-lg-4 col-md-4 col-sm-12" key={blog.id}>
                                     <BlogBox {...blog} />
                                 </div>
                             ))
