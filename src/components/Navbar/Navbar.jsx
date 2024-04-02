@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, NavLink, useLocation } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import './Navbar.css';
 
 export default function Navbar() {
+    const location = useLocation()
     const user = useSelector(store => store.user); // get user state
     const navigate = useNavigate()
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -58,30 +59,39 @@ export default function Navbar() {
                             {/* menu */}
                             <ul className="nav-menu">
 
-                                <li className="active">
-                                    <a href="#">خانه</a>
+                                <li className={`${location.pathname == '/' && "active"}`}>
+                                    <Link to='/' href="#">خانه</Link>
                                 </li>
 
-                                <li>
-                                    <a href="#">فروشگاه</a>
+                                <li className={`${location.pathname == '/books' && "active"}`}>
+                                    <Link to="/books">کتاب ها</Link>
+                                </li>
+
+                                <li className={`${location.pathname == '/courses' && "active"}`}>
+                                    <Link to="/courses">دوره ها</Link>
                                 </li>
 
 
-                                <li>
-                                    <a href="#">وبلاگ</a>
+                                <li className={`${location.pathname == '/blogs' && "active"}`}>
+                                    <Link to="/blogs"> وبلاگ ها</Link>
                                 </li>
-                                <li>
-                                    <a href="#">تماس با ما</a>
+
+                                <li className={`${location.pathname == '/contact-us' && "active"}`}>
+                                    <Link to="/contact-us">تماس با ما</Link>
                                 </li>
-                                <li>
-                                    <a href="#">درباره ما</a>
+
+                                <li className={`${location.pathname == '/about-us' && "active"}`}>
+                                    <Link to="/about-us">درباره ما</Link>
                                 </li>
-                                <li>
-                                    <a href="#">قوانین ومقررات</a>
+
+                                <li className={`${location.pathname == '/privacy' && "active"}`}>
+                                    <Link to="/privacy">قوانین ومقررات</Link>
                                 </li>
-                                <li>
-                                    <a href="#">سوالات متداول</a>
+
+                                <li className={`${location.pathname == '/questions' && "active"}`}>
+                                    <Link to="/questions">سوالات متداول</Link>
                                 </li>
+
                                 <li>
                                     <a href="#">لیست مدرس ها</a>
                                 </li>
