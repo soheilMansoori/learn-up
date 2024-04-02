@@ -1,9 +1,11 @@
-import BlogBox from '../../../../components/‌Blogs/BlogBox/BlogBox'
-import Slider from 'react-slick'
+import BlogBox from '../../../../components/‌Blogs/BlogBox/BlogBox';
 import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
-import './LastBlogs.css'
+import Slider from 'react-slick';
+import { useQuery } from 'react-query';
+import './LastBlogs.css';
 
 export default function LastBlogs() {
+    const { data } = useQuery(['last-blogs'], () => fetch(`${process.env.REACT_APP_BASE_URL}/blogs?_limit=7&_embed=teacher`).then(res => res.json()));
     const settings = {
         slidesToShow: 4,
         infinity: false,
@@ -50,23 +52,24 @@ export default function LastBlogs() {
                         </>
                     }
                 />
+                {data?.length > 4 ? (
+                    <Slider {...settings} className="row gap-5">
+                        {data?.map(blog => (
+                            <div className="col-12" key={blog.id}>
+                                <BlogBox {...blog} />
+                            </div>
+                        ))}
+                    </Slider>
+                ) : (
+                    <div className="row">
+                        {data?.map(blog => (
+                            <div className="col-12 col-md-6 col-lg-3" key={blog.id}>
+                                <BlogBox {...blog} />
+                            </div>
+                        ))}
+                    </div>
+                )}
 
-
-                <Slider {...settings} className="row gap-5">
-                    {/* Single Article  */}
-                    <div className="col-12">
-                        <BlogBox />
-                    </div>
-                    <div className="col-12">
-                        <BlogBox />
-                    </div>
-                    <div className="col-12">
-                        <BlogBox />
-                    </div>
-                    <div className="col-12">
-                        <BlogBox />
-                    </div>
-                </Slider>
             </div>
         </section>
     )

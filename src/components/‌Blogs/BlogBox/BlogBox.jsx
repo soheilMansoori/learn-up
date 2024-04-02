@@ -1,21 +1,26 @@
+import { Link } from 'react-router-dom';
 import './BlogBox.css'
 
-export default function BlogBox() {
+export default function BlogBox({ title, slug, image, teacher: { username: teacherName, profileImage: teacherProfile, slug: teacherSlug } = {} }) {
     return (
         <div className="articles_grid_style" dir='rtl'>
             <div className="articles_grid_thumb">
-                <a href="blog-detail.html">
-                    <img src="./images/blogs/blog-1.jpg" className="img-fluid" />
-                </a>
+                <Link to={`/blog-details/${slug}`}>
+                    <img src={image} className="img-fluid" />
+                </Link>
             </div>
 
             <div className="articles_grid_caption">
-                <h4>چطور زبان انگلیسی را سریع یاد بگیریم؟</h4>
+                <Link to={`/blog-details/${slug}`}>
+                    <h4>{title}</h4>
+                </Link>
                 <div className="articles_grid_author">
-                    <div className="articles_grid_author_img">
-                        <img src="./images/teachers/teacher-1.jpg" className="img-fluid" />
-                    </div>
-                    <h4>مسعود صالحی</h4>
+                    <Link to={`/teacher-details/${teacherSlug}`} className="articles_grid_author_img">
+                        <img src={teacherProfile} className="img-fluid" />
+                    </Link>
+                    <Link to={`/teacher-details/${teacherSlug}`}>
+                        <h4>{teacherName}</h4>
+                    </Link>
                 </div>
             </div>
         </div>
