@@ -410,5 +410,87 @@
       "id": "7",
       "image": "/images/Home/PartnerBrands/brand-7.jpg"
     }
+  ],
+  "blogs": [
+    {
+      "id": "1",
+      "teacherId": "1",
+      "title": "forEach در جاوا اسکریپت",
+      "image": "/images/blogs/blog-1.jpg",
+      "blogContetnt": "",
+      "slug": "1"
+    },
+    {
+      "id": "2",
+      "teacherId": "1",
+      "title": "گیت لب چیست؟",
+      "image": "/images/blogs/blog-2.jpg",
+      "blogContetnt": "",
+      "slug": "2"
+    },
+    {
+      "id": "3",
+      "teacherId": "1",
+      "title": "بهترین سایت های فریلنسری خارجی",
+      "image": "/images/blogs/blog-3.jpg",
+      "blogContetnt": "",
+      "slug": "3"
+    },
+    {
+      "id": "4",
+      "teacherId": "1",
+      "title": "حداقل سیستم برنامه نویسی",
+      "image": "/images/blogs/blog-4.jpg",
+      "blogContetnt": "",
+      "slug": "4"
+    },
+    {
+      "id": "5",
+      "teacherId": "1",
+      "title": "بهترین کد ادیتور انلاین",
+      "image": "/images/blogs/blog-5.jpg",
+      "blogContetnt": "",
+      "slug": "5"
+    },
+    {
+      "id": "6",
+      "teacherId": "1",
+      "title": "بهترین مفسرهای پایتون",
+      "image": "/images/blogs/blog-6.jpg",
+      "blogContetnt": "",
+      "slug": "6"
+    },
+    {
+      "id": "7",
+      "teacherId": "1",
+      "title": "تفاوت بوت استرپ 4 و 5 چیست ؟",
+      "image": "/images/blogs/blog-7.jpg",
+      "blogContetnt": "",
+      "slug": "7"
+    },
+    {
+      "id": "8",
+      "teacherId": "1",
+      "title": "UI و UX چیست؟",
+      "image": "/images/blogs/blog-8.jpg",
+      "blogContetnt": "",
+      "slug": "8"
+    },
+    {
+      "id": "9",
+      "teacherId": "1",
+      "title": "Nodejs یا PHP | مقایسه 2 غول بک‌اند",
+      "image": "/images/blogs/blog-9.jpg",
+      "blogContetnt": "",
+      "slug": "9"
+    },
+    {
+      "id": "10",
+      "teacherId": "1",
+      "title": "JQuery چیست ؟",
+      "image": "/images/blogs/blog-10.jpg",
+      "blogContetnt": "",
+      "slug": "10"
+    }
   ]
 }
