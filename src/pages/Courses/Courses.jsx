@@ -10,7 +10,7 @@ import Footer from "../../components/Footer/Footer";
 import useInfiniteScroll from '../../hooks/useInfiniteScroll';
 
 export default function Courses() {
-    const pageSize = 6
+    const pageSize = 8
     const { mainData: courses = [], hasNextPage, fetchNextPage, isFetching, allItemsLength } = useInfiniteScroll(['courses-infinite'], ({ pageParam = 1 }) => fetch(`${process.env.REACT_APP_BASE_URL}/courses?_embed=teacher&_page=${pageParam}&_per_page=${pageSize}`).then(res => res.json()));
     const [isShowMenu, setIsShowMenu] = useState(false);
     const closeFilterMenu = () => setIsShowMenu(false);
