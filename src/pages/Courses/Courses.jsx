@@ -7,8 +7,11 @@ import CourseBox from "../../components/Courses/CourseBox/CourseBox";
 import BackToTop from "../../components/BackToTop/BackToTop";
 import NewsLetter from "../../components/NewsLetter/NewsLetter";
 import Footer from "../../components/Footer/Footer";
+import useInfiniteScroll from '../../hooks/useInfiniteScroll';
 
 export default function Courses() {
+    const pageSize = 6
+    const { mainData: courses = [], hasNextPage, fetchNextPage, isFetching, allItemsLength } = useInfiniteScroll(['courses-infinite'], ({ pageParam = 1 }) => fetch(`${process.env.REACT_APP_BASE_URL}/courses?_embed=teacher&_page=${pageParam}&_per_page=${pageSize}`).then(res => res.json()));
     const [isShowMenu, setIsShowMenu] = useState(false);
     const closeFilterMenu = () => setIsShowMenu(false);
     const openFilterMenu = () => setIsShowMenu(true);
@@ -36,46 +39,49 @@ export default function Courses() {
                         <div className="col-lg-12 col-md-12 col-sm-12">
                             {/* filter btn */}
                             <FilterButtons
+                                allItemsLength={allItemsLength}
                                 btnTitle='دوره های آموزشی'
                                 dropdownItems={[{ id: 1, name: "جدید" }, { id: 2, name: "ویژه" }, { id: 3, name: "پر مخاطب" }]}
                                 openFilterMenu={openFilterMenu}
                             />
                             {/* books wrapper */}
                             <div className="row">
-
-                                <div className="col-lg-4 col-md-4 col-sm-6">
-                                    <CourseBox />
-                                </div>
-                                <div className="col-lg-4 col-md-4 col-sm-6">
-                                    <CourseBox />
-                                </div>
-                                <div className="col-lg-4 col-md-4 col-sm-6">
-                                    <CourseBox />
-                                </div>
-                                <div className="col-lg-4 col-md-4 col-sm-6">
-                                    <CourseBox />
-                                </div>
-                                <div className="col-lg-4 col-md-4 col-sm-6">
-                                    <CourseBox />
-                                </div>
-                                <div className="col-lg-4 col-md-4 col-sm-6">
-                                    <CourseBox />
-                                </div>
-
+                                {courses.length ? (
+                                    courses.map(course => (
+                                        <div className="col-lg-4 col-md-4 col-sm-6" key={course.id}>
+                                            <CourseBox {...course} />
+                                        </div>
+                                    ))
+                                ) : null}
                             </div>
 
                             {/* load more btn */}
                             <div className="row">
                                 <div className="col-lg-12 col-md-12 col-sm-12">
-
                                     <div className="row">
                                         <div className="col-lg-12 col-md-12 col-sm-12 text-center">
-                                            <button type="button" className="btn btn-loader"><i className="fa fa-refresh ml-3"></i>فهرست کامل</button>
+                                            {isFetching ? (
+                                                <>
+                                                    <button type="button" className="btn btn-loader" disabled={true}>
+                                                        <i className="fa fa-refresh ml-3" />
+                                                        در حال دریافت
+                                                    </button>
+                                                </>
+                                            ) : (
+                                                <button type="button" className="btn btn-loader" onClick={fetchNextPage} disabled={!hasNextPage}>
+                                                    {hasNextPage ? (
+                                                        <>
+                                                            <i className="fa fa-refresh ml-3" />
+                                                            دوره  های بیشتر
+                                                        </>
+                                                    ) : 'دوره دیگری وجود ندارد'}
+                                                </button>
+                                            )}
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

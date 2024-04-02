@@ -1,11 +1,11 @@
 import Dropdown from 'react-bootstrap/Dropdown'
 import './FilterButtons.css'
 
-export default function FilterButtons({ openFilterMenu, btnTitle, dropdownItems }) {
+export default function FilterButtons({ openFilterMenu, btnTitle, dropdownItems , allItemsLength }) {
   return (
     <div className="row align-items-center mb-3">
       <div className="col-lg-6 col-md-6 col-sm-12">
-        <strong>142</strong> جزوه و کتاب آموزشی یافت شد.
+        <strong>{allItemsLength}</strong> جزوه و کتاب آموزشی یافت شد.
       </div>
       <div className="col-lg-6 col-md-6 col-sm-12 ordering">
         <div className="filter_wraps">
