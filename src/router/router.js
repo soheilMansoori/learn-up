@@ -13,6 +13,7 @@ import CourseDetails from "../pages/CourseDetails/CourseDetails"
 import BookDetails from "../pages/BookDetails/BookDetails"
 import UserBasket from "../pages/UserBasket/UserBasket"
 import Register from "../pages/Register/Register"
+import TeacherDetails from "../pages/TeacherDetails/TeacherDetails"
 
 const router = [
     { path: '/', element: <Home /> },
@@ -29,6 +30,7 @@ const router = [
     { path: '/courses', element: <Courses /> },
     { path: '/course-details/:id', element: <CourseDetails /> },
     { path: '/user-basket', element: <UserBasket /> },
+    { path: '/teacher-details/:id', element: <TeacherDetails /> },
     { path: '*', element: <NotFound /> },
 ]
 

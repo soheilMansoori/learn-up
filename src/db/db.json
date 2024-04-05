@@ -14,9 +14,38 @@
       "id": "1",
       "username": "مهرداد عظیمی",
       "profileImage": "/images/teachers/teacher-1.jpg",
-      "teacherDescription": "اولین کدم رو 14 سالگی زدم، حدود 9 سال پیش که با زبان ویژوال بیسیک بود و بعد حدودا 2 سال تو فیلد برنامه نویسی موبایل با زبان جاوا کار کردم و در نهایت با عشقی به اسم جاوا اسکریپت آشنا شدم و حدودا یه 7 سالی هست جاوا اسکریپت کد می‌زنم و به صورت Mern Stack فعالیت می‌کنم.",
-      "aboutTeacher": "",
-      "socialsLinks": [],
+      "teacherAchievements": [
+        "<div class='skills_captions'><h4 class='Skill_title'>فارغ التحصیل کارشناسی ارشد مهندسی برق</h4><span>1397 - 1399</span><span>دانشگاه تربیت مدرس</span><p class='skills_dec'>سابقه تدریس به شاگردانی که قصد ورود به مدارس برتر، نمونه دولتی، روشنگران، سلام، خرد و مهدوی را داشتند.</p></div>",
+        "<div class='skills_captions'><h4 class='Skill_title'>فارغ التحصیل کارشناسی مهندسی برق</h4>  <span>1395 - 1396</span><span>دانشگاه شهید بهشتی</span> <p class='skills_dec'>تدریس آنلاین ریاضی به ایرانیان مقیم کشورهای مختلف از جمله: کانادا، امریکا، انگلیس، روسیه، دبی و مالزی</p> </div>",
+        "<div class='skills_captions'><h4 class='Skill_title'>3 سال سابقه تدریس ریاضیات و فیزیک</h4><span>1397 - 1399</span><span>موسسه قلم چی</span><p className='skills_dec'>تدریس ریاضی به زبان انگلیسی در مدارس اینترنشنال به دانش آموزان انگلیسی زبان و گذراندن دوره های تربیت معلم</p></div>"
+      ],
+      "aboutTeacher": "اولین کدم رو 14 سالگی زدم، حدود 9 سال پیش که با زبان ویژوال بیسیک بود و بعد حدودا 2 سال تو فیلد برنامه نویسی موبایل با زبان جاوا کار کردم و در نهایت با عشقی به اسم جاوا اسکریپت آشنا شدم و حدودا یه 7 سالی هست جاوا اسکریپت کد می‌زنم و به صورت Mern Stack فعالیت می‌کنم.",
+      "socialsLinks": [
+        {
+          "id": "1",
+          "link": "#",
+          "icon": "fa-brands fa-github",
+          "class": "platinum"
+        },
+        {
+          "id": "2",
+          "link": "#",
+          "icon": "fa-brands fa-instagram",
+          "class": "started"
+        },
+        {
+          "id": "3",
+          "link": "#",
+          "icon": "fa-brands fa-telegram",
+          "class": "elite unlock"
+        },
+        {
+          "id": "4",
+          "link": "#",
+          "icon": "fa-brands fa-linkedin",
+          "class": "medium"
+        }
+      ],
       "expertise": "برنامه نویس فول استک",
       "slug": "1"
     }
@@ -493,5 +522,6 @@
       "slug": "10"
     }
   ],
-  "contacts": []
+  "contacts": [],
+  "comments": [{ "id": 1, "teacherId": "1", "meesage": "lorem" }]
 }
