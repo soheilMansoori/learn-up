@@ -2,7 +2,7 @@ import './SendComment.css'
 
 export default function SendComment() {
     return (
-        <div className="comment-box submit-form mb-5">
+        <div className="comment-box submit-form mb-2">
             <h3 className="reply-title">ثبت دیدگاه</h3>
             <div className="comment-form">
                 <form action="#">

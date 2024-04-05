@@ -28,7 +28,9 @@ export default function CourseDetails() {
                             <CourseCreator />
                             <div className="edu_wraper">
                                 <SendComment />
-                                <CommentBox />
+                                <div className="reviews-comments-wrap">
+                                    <CommentBox />
+                                </div>
                             </div>
                         </div>
                         {/* Sidebar  */}
