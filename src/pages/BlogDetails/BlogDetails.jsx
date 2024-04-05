@@ -46,7 +46,9 @@ export default function BlogDetails() {
                                     {/* send comment */}
                                     <SendComment />
                                     {/* comments */}
-                                    <CommentBox />
+                                    <div className="reviews-comments-wrap">
+                                        <CommentBox />
+                                    </div>
                                 </div>
                             </div>
                         </div>
