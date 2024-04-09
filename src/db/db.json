@@ -523,5 +523,6 @@
     }
   ],
   "contacts": [],
-  "comments": [{ "id": 1, "teacherId": "1", "meesage": "lorem" }]
+  "comments": [{ "id": 1, "teacherId": "1", "meesage": "lorem" }],
+  "newsLetterEmails": []
 }
