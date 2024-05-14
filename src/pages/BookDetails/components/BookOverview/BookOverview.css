@@ -1,0 +1,22 @@
+.woo_buttons .btn-theme2 {
+  /* width: 100%; */
+}
+
+.woo_buttons .woo_btn_light {
+  /* width: 100%; */
+
+  &:hover {
+    background-color: #da0b4e;
+    color: white !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .woo_buttons {
+    margin: 0;
+  }
+  .woo_buttons .woo_btn_light {
+    margin-top: 0.5rem;
+    margin-right: 0 !important;
+  }
+}
