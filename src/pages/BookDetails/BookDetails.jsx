@@ -11,7 +11,7 @@ import SimilarBooks from "./components/SimilarBooks/SimilarBooks";
 export default function BookDetails() {
     const navigate = useNavigate()
     const { id } = useParams()
-    const { data } = useQuery([`book-details-${id}`], () => fetch(`${process.env.REACT_APP_BASE_URL}/books/${id}`).then(res => {
+    const { data } = useQuery([`book-details-${id}`], () => fetch(`${process.env.REACT_APP_BASE_URL}/books/${id}?_embed=comments`).then(res => {
         if (res.status === 404) {
             navigate("/404")
         }
