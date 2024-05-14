@@ -16,13 +16,14 @@ export default function BookDetails() {
             navigate("/404")
         }
         return res.json()
-    }))
+    }));
+    const { data: similarBooks } = useQuery([`similar-books-for-book-${id}`], () => fetch(`${process.env.REACT_APP_BASE_URL}/books?id_ne=${id}`).then(res => res.json()));
     return (
         <>
             <Navbar />
             <BookOverview {...data} />
             <BookTabs {...data} />
-            <SimilarBooks />
+            <SimilarBooks similarBooks={similarBooks} />
             <BackToTop />
             <NewsLetter />
             <Footer />

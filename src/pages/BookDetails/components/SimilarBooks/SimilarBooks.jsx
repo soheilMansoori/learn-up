@@ -3,7 +3,7 @@ import SectionTitle from '../../../../components/SectionTitle/SectionTitle';
 import BookBox from '../../../../components/‌Books/BookBox/BookBox';
 import './SimilarBooks.css';
 
-export default function SimilarBooks() {
+export default function SimilarBooks({ similarBooks = [] }) {
     const settings = {
         slidesToShow: 4,
         infinity: false,
@@ -48,30 +48,11 @@ export default function SimilarBooks() {
                     }
                 />
                 <Slider {...settings} className='row gap-5'>
-                    <div className="col">
-                        <BookBox />
-                    </div>
-                    <div className="col">
-                        <BookBox />
-                    </div>
-                    <div className="col">
-                        <BookBox />
-                    </div>
-                    <div className="col">
-                        <BookBox />
-                    </div>
-                    <div className="col">
-                        <BookBox />
-                    </div>
-                    <div className="col">
-                        <BookBox />
-                    </div>
-                    <div className="col">
-                        <BookBox />
-                    </div>
-                    <div className="col">
-                        <BookBox />
-                    </div>
+                    {similarBooks.map(book => (
+                        <div className="col" key={book.id}>
+                            <BookBox {...book} />
+                        </div>
+                    ))}
                 </Slider>
             </div>
         </section>
