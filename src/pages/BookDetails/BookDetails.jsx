@@ -21,7 +21,7 @@ export default function BookDetails() {
         <>
             <Navbar />
             <BookOverview {...data} />
-            <BookTabs />
+            <BookTabs {...data} />
             <SimilarBooks />
             <BackToTop />
             <NewsLetter />
