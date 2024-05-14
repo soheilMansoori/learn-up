@@ -1,3 +1,5 @@
+import { useQuery } from "react-query";
+import { useNavigate, useParams } from "react-router-dom";
 import BackToTop from "../../components/BackToTop/BackToTop";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
@@ -7,10 +9,18 @@ import BookTabs from "./components/BookTabs/BookTabs";
 import SimilarBooks from "./components/SimilarBooks/SimilarBooks";
 
 export default function BookDetails() {
+    const navigate = useNavigate()
+    const { id } = useParams()
+    const { data } = useQuery([`book-details-${id}`], () => fetch(`${process.env.REACT_APP_BASE_URL}/books/${id}`).then(res => {
+        if (res.status === 404) {
+            navigate("/404")
+        }
+        return res.json()
+    }))
     return (
         <>
             <Navbar />
-            <BookOverview />
+            <BookOverview {...data} />
             <BookTabs />
             <SimilarBooks />
             <BackToTop />
