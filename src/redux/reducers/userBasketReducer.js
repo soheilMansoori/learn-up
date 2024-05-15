@@ -45,7 +45,7 @@ function userBasketReducer(state = [], action = {}) {
 const refreshUserBasketAction = () => ({ type: refreshUserBasket });
 const addToBasketAction = (productDetails) => ({ type: addToBasket, payload: productDetails });
 const removeFromBasketAction = (productID) => ({ type: removeFromBasket, payload: productID });
-const updateBasketAction = (products) => ({ type: removeFromBasket, payload: products });
+const updateBasketAction = (products) => ({ type: updateBasket, payload: products });
 const clearBasketAction = () => ({ type: clearBasket });
 
 // exports
