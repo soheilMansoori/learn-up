@@ -1,6 +1,7 @@
 import Cookies from "universal-cookie";
 
 // action types 
+const getUserBasket = "GET_USER_BASKET";
 const addToBasket = "ADD_TO_BASKET";
 const removeFromBasket = "REMOVE_FROM_BASKET";
 const updateBasket = "UPDATE_BASKET";
@@ -9,6 +10,10 @@ const clearBasket = "CLEAR_BASKET";
 // create reducer
 function userBasketReducer(state = [], action = {}) {
     switch (action.type) {
+        case getUserBasket: {
+            const newState = getUserBasketFromCookies() || [];
+            return newState;
+        }
         case addToBasket: {
             const newState = [...state, action.payload];
             addUserBasketToCookies(newState)
@@ -37,6 +42,7 @@ function userBasketReducer(state = [], action = {}) {
 
 
 // action creators
+const getUserBasketAction = () => ({ type: getUserBasket });
 const addToBasketAction = (productDetails) => ({ type: addToBasket, payload: productDetails });
 const removeFromBasketAction = (productID) => ({ type: removeFromBasket, payload: productID });
 const updateBasketAction = (products) => ({ type: removeFromBasket, payload: products });
@@ -45,6 +51,7 @@ const clearBasketAction = () => ({ type: clearBasket });
 // exports
 export {
     userBasketReducer,
+    getUserBasketAction,
     addToBasketAction,
     removeFromBasketAction,
     updateBasketAction,
@@ -52,6 +59,10 @@ export {
 };
 
 ////////////////////////////////// utility functions //////////////////////////////////////////////////////////////////
+function getUserBasketFromCookies() {
+    const cookies = new Cookies(null, { path: '/' });
+    return cookies.get('userBasket');
+};
 function addUserBasketToCookies(userBasket) {
     const cookies = new Cookies(null, { path: '/' });
     const date = new Date();
