@@ -7,35 +7,46 @@ const removeFromBasket = "REMOVE_FROM_BASKET";
 const updateBasket = "UPDATE_BASKET";
 const clearBasket = "CLEAR_BASKET";
 
+// default state 
+const defaultState = { totalPrice: null, productsPrice: null, sendPrice: null, offPrice: null, products: [] };
+
 // create reducer
-function userBasketReducer(state = [], action = {}) {
+function userBasketReducer(state = defaultState, action = {}) {
     switch (action.type) {
         case refreshUserBasket: {
-            const newState = getUserBasketFromCookies() || [];
+            const { products = [] } = getUserBasketFromCookies();
+            const [productsPrice, offPrice, sendPrice, totalPrice] = userFactor(products);
+            const newState = { totalPrice, productsPrice, sendPrice, offPrice, products };
             return newState;
         }
         case addToBasket: {
-            const newState = [...state, action.payload];
+            const products = [...state.products, action.payload]
+            const [productsPrice, offPrice, sendPrice, totalPrice] = userFactor(products);
+            const newState = { totalPrice, productsPrice, sendPrice, offPrice, products };
             addUserBasketToCookies(newState)
             return newState;
         };
         case removeFromBasket: {
-            const newState = state.filter(product => product.id !== action.payload);
+            const products = state.products.filter(product => product.id !== action.payload);
+            const [productsPrice, offPrice, sendPrice, totalPrice] = userFactor(products);
+            const newState = { totalPrice, productsPrice, sendPrice, offPrice, products };
             updateUserBasketInCookies(newState);
             return newState;
         };
         case updateBasket: {
-            const newState = action.payload;
+            const products = action.payload;
+            const [productsPrice, offPrice, sendPrice, totalPrice] = userFactor(products);
+            const newState = { totalPrice, productsPrice, sendPrice, offPrice, products };
             updateUserBasketInCookies(newState);
             return newState;
         };
         case clearBasket: {
-            const newState = []
+            const newState = defaultState;
             clearUserBasketFromCookies();
             return newState;
         };
         default: {
-            return state;
+            return defaultState;
         };
     }
 };
@@ -59,9 +70,19 @@ export {
 };
 
 ////////////////////////////////// utility functions //////////////////////////////////////////////////////////////////
+function userFactor(products) {
+    const productsPrice = products.reduce((acc, product) => acc + Number(product.productPrice * product.productCount), 0);
+    const offPrice = products.reduce((acc, product) => acc + Number(product.productOffer), 0);
+    let sendPrice = 0;
+    for (const product of products) {
+        sendPrice += (product.productCount * 12000)
+    };
+    const totalPrice = (Number(productsPrice) + sendPrice) - offPrice;
+    return [productsPrice, offPrice, sendPrice, totalPrice];
+};
 function getUserBasketFromCookies() {
     const cookies = new Cookies(null, { path: '/' });
-    return cookies.get('userBasket');
+    return cookies.get('userBasket') || {};
 };
 function addUserBasketToCookies(userBasket) {
     const cookies = new Cookies(null, { path: '/' });
