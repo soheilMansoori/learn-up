@@ -1,7 +1,7 @@
 import Cookies from "universal-cookie";
 
 // action types 
-const getUserBasket = "GET_USER_BASKET";
+const refreshUserBasket = "REFRESH_USER_BASKET";
 const addToBasket = "ADD_TO_BASKET";
 const removeFromBasket = "REMOVE_FROM_BASKET";
 const updateBasket = "UPDATE_BASKET";
@@ -10,7 +10,7 @@ const clearBasket = "CLEAR_BASKET";
 // create reducer
 function userBasketReducer(state = [], action = {}) {
     switch (action.type) {
-        case getUserBasket: {
+        case refreshUserBasket: {
             const newState = getUserBasketFromCookies() || [];
             return newState;
         }
@@ -42,7 +42,7 @@ function userBasketReducer(state = [], action = {}) {
 
 
 // action creators
-const getUserBasketAction = () => ({ type: getUserBasket });
+const refreshUserBasketAction = () => ({ type: refreshUserBasket });
 const addToBasketAction = (productDetails) => ({ type: addToBasket, payload: productDetails });
 const removeFromBasketAction = (productID) => ({ type: removeFromBasket, payload: productID });
 const updateBasketAction = (products) => ({ type: removeFromBasket, payload: products });
@@ -51,7 +51,7 @@ const clearBasketAction = () => ({ type: clearBasket });
 // exports
 export {
     userBasketReducer,
-    getUserBasketAction,
+    refreshUserBasketAction,
     addToBasketAction,
     removeFromBasketAction,
     updateBasketAction,
