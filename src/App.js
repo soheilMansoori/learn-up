@@ -4,6 +4,7 @@ import { useQuery } from 'react-query';
 import { useCookies } from 'react-cookie';
 import { useDispatch } from 'react-redux';
 import { refreshTokenAction } from './redux/reducers/userReducer';
+import { refreshUserBasketAction } from './redux/reducers/userBasketReducer';
 import router from './router/router';
 
 function App() {
@@ -20,6 +21,11 @@ function App() {
 
     }
   }, [data])
+
+
+  useEffect(() => { // get user basket from cookies when refresh page and set in store
+    dispatch(refreshUserBasketAction())
+  }, [])
 
   useEffect(() => { // run when pages change and scroll to top of page
     window.document.documentElement.scrollTo({
