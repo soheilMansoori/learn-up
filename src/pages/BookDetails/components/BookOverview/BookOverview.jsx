@@ -8,8 +8,8 @@ import './BookOverview.css';
 export default function BookOverview({ id, bookCode, bookName, category, description, image, isNew, isVip, price, score }) {
     const [bookCount, setBookCount] = useState(1);
     const userBasketStore = useSelector(store => store.userBasket);
-
     const dispatch = useDispatch();
+
     // Notifies
     const addToBasketSuccessNotify = () => toast.success('محصول به سبد خرید اضافه شد', {
         position: "bottom-right",

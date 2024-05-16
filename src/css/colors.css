@@ -31,9 +31,9 @@
 .blue2-skin .btn-theme-2,
 .blue2-skin .top-header,
 .blue2-skin .pricing-bottom .btn-pricing {
-    background-color: #252c41;
-    background: #252c41;
-    border-color: #252c41;
+  background-color: #252c41;
+  background: #252c41;
+  border-color: #252c41;
 }
 
 .red-skin .hero-search h1,
@@ -46,7 +46,7 @@
 .goodred-skin .hero-search h1,
 .goodgreen-skin .hero-search h1,
 .blue2-skin .hero-search h1 {
-    color: #252c41 !important;
+  color: #252c41 !important;
 }
 
 /*-------------- Red Color Option --------------------*/
@@ -57,7 +57,12 @@
 .red-skin .range-slider .ui-slider .ui-slider-handle,
 .red-skin .range-slider .ui-widget-header,
 .red-skin .pricing-bottom .btn-pricing:hover,
-.red-skin .pricing-bottom .btn-pricing:focus .red-skin .select2-container--default .select2-results__option--highlighted[aria-selected],
+.red-skin
+  .pricing-bottom
+  .btn-pricing:focus
+  .red-skin
+  .select2-container--default
+  .select2-results__option--highlighted[aria-selected],
 .red-skin .pagination li:first-child a,
 .red-skin .btn.btn-theme,
 .red-skin .btn.btn-theme:hover,
@@ -75,22 +80,23 @@
 .red-skin .home-slider-desc .read-more,
 .red-skin .nav-tabs .nav-item.show .nav-link,
 .red-skin .nav-tabs .nav-link.active,
-.red-skin .checkbox-custom:checked+.checkbox-custom-label:before,
-.red-skin .radio-custom:checked+.radio-custom-label:before,
+.red-skin .checkbox-custom:checked + .checkbox-custom-label:before,
+.red-skin .radio-custom:checked + .radio-custom-label:before,
 .red-skin .btn.pop-login,
 .red-skin .single-widgets.widget_search form button,
 .red-skin .single-widgets.widget_tags ul li a:hover,
 .red-skin .single-widgets.widget_tags ul li a:focus,
-.red-skin .pagination>.active>a,
-.red-skin .pagination>.active>a:focus,
-.red-skin .pagination>.active>a:hover,
-.red-skin .pagination>.active>span,
-.red-skin .pagination>.active>span:focus,
-.red-skin .pagination>.active>span:hover,
-.red-skin .pagination>li>a:focus,
-.red-skin .pagination>li>a:hover {
-    background-color: #da0b4e;
-    background: #da0b4e;
+.red-skin .pagination > .active > a,
+.red-skin .pagination > .active > a:focus,
+.red-skin .pagination > .active > a:hover,
+.red-skin .pagination > .active > span,
+.red-skin .pagination > .active > span:focus,
+.red-skin .pagination > .active > span:hover,
+.red-skin .pagination > li > a:focus,
+.red-skin .pagination > li > a:hover {
+  background-color: #da0b4e;
+  background: #da0b4e;
+  color: white;
 }
 
 .red-skin a.link:hover,
@@ -102,7 +108,7 @@ a:focus,
 .red-skin .bl-continue,
 .red-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
 .red-skin nav .menu li a.active,
-.red-skin nav .menu li.dropdown.open>a,
+.red-skin nav .menu li.dropdown.open > a,
 .red-skin nav .menu .mg-menu li a i,
 .red-skin nav .menu li a:hover,
 .red-skin .recommended .pr-value,
@@ -114,21 +120,30 @@ a:focus,
 .red-skin span.mod-close,
 .red-skin .blog-page .blog-details blockquote .icon,
 .red-skin .single-post-pagination .post-pagination-center-grid a,
-.red-skin .blog-page .blog-details .comment-area .all-comments article .comment-details .comment-meta .comment-left-meta .comment-date,
+.red-skin
+  .blog-page
+  .blog-details
+  .comment-area
+  .all-comments
+  article
+  .comment-details
+  .comment-meta
+  .comment-left-meta
+  .comment-date,
 .red-skin .cn-info-icon i,
 .red-skin .client-info h5,
 .red-skin .listing-card-info-price {
-    color: #da0b4e;
+  color: #da0b4e;
 }
 
-.red-skin .pagination>.active>a,
-.red-skin .pagination>.active>a:focus,
-.red-skin .pagination>.active>a:hover,
-.red-skin .pagination>.active>span,
-.red-skin .pagination>.active>span:focus,
-.red-skin .pagination>.active>span:hover,
-.red-skin .pagination>li>a:focus,
-.red-skin .pagination>li>a:hover,
+.red-skin .pagination > .active > a,
+.red-skin .pagination > .active > a:focus,
+.red-skin .pagination > .active > a:hover,
+.red-skin .pagination > .active > span,
+.red-skin .pagination > .active > span:focus,
+.red-skin .pagination > .active > span:hover,
+.red-skin .pagination > li > a:focus,
+.red-skin .pagination > li > a:hover,
 .red-skin .pagination li:first-child a,
 .red-skin .range-slider .ui-slider .ui-slider-handle,
 .red-skin .attributes li.submit-attri.theme-log a,
@@ -151,71 +166,71 @@ a:focus,
 .red-skin .btn.pop-login,
 .red-skin .single-widgets.widget_tags ul li a:hover,
 .red-skin .single-widgets.widget_tags ul li a:focus {
-    border-color: #da0b4e;
+  border-color: #da0b4e;
 }
 
 .red-skin li.login-attri.theme-log a {
-    box-shadow: 0 8px 5px rgba(240, 44, 45, 0.2);
-    -webkit-box-shadow: 0 8px 5px rgba(240, 44, 45, 0.2);
+  box-shadow: 0 8px 5px rgba(240, 44, 45, 0.2);
+  -webkit-box-shadow: 0 8px 5px rgba(240, 44, 45, 0.2);
 }
 
 .red-skin .btn.btn-theme-light,
 .red-skin .theme-bg-light {
-    background: rgba(240, 44, 45, 0.1);
+  background: rgba(240, 44, 45, 0.1);
 }
 
-.nav-menu.nav-menu-social>li.add-listing.theme-border {
-    border: 1px solid #da0b4e !important;
-    transition: all ease 0.4s;
+.nav-menu.nav-menu-social > li.add-listing.theme-border {
+  border: 1px solid #da0b4e !important;
+  transition: all ease 0.4s;
 }
 
-.nav-menu.nav-menu-social>li.add-listing.theme-border a {
-    color: #da0b4e !important;
+.nav-menu.nav-menu-social > li.add-listing.theme-border a {
+  color: #da0b4e !important;
 }
 
-.nav-menu.nav-menu-social>li.add-listing.theme-border:hover,
-.nav-menu.nav-menu-social>li.add-listing.theme-border:focus {
-    background: #da0b4e !important;
+.nav-menu.nav-menu-social > li.add-listing.theme-border:hover,
+.nav-menu.nav-menu-social > li.add-listing.theme-border:focus {
+  background: #da0b4e !important;
 }
 
-.nav-menu.nav-menu-social>li.add-listing.theme-border:hover a,
-.nav-menu.nav-menu-social>li.add-listing.theme-border:focus a {
-    color: #ffffff !important;
+.nav-menu.nav-menu-social > li.add-listing.theme-border:hover a,
+.nav-menu.nav-menu-social > li.add-listing.theme-border:focus a {
+  color: #ffffff !important;
 }
 
-.nav-menu.nav-menu-social>li.add-listing.black-border {
-    border: 1px solid #2e344a !important;
+.nav-menu.nav-menu-social > li.add-listing.black-border {
+  border: 1px solid #2e344a !important;
 }
 
-.nav-menu.nav-menu-social>li.add-listing.black-border a {
-    color: #2e344a !important;
+.nav-menu.nav-menu-social > li.add-listing.black-border a {
+  color: #2e344a !important;
 }
 
-.nav-menu.nav-menu-social>li.add-listing.black-border:hover,
-.nav-menu.nav-menu-social>li.add-listing.black-border:focus {
-    background: #2e344a !important;
+.nav-menu.nav-menu-social > li.add-listing.black-border:hover,
+.nav-menu.nav-menu-social > li.add-listing.black-border:focus {
+  background: #2e344a !important;
 }
 
-.nav-menu.nav-menu-social>li.add-listing.black-border:hover a,
-.nav-menu.nav-menu-social>li.add-listing.black-border:focus a {
-    color: #ffffff !important;
+.nav-menu.nav-menu-social > li.add-listing.black-border:hover a,
+.nav-menu.nav-menu-social > li.add-listing.black-border:focus a {
+  color: #ffffff !important;
 }
 
-.nav-menu.nav-menu-social>li.add-listing.black-bg {
-    background: #2e344a !important;
-    transition: all ease 0.4s;
-    border: 1px solid #2e344a !important;
+.nav-menu.nav-menu-social > li.add-listing.black-bg {
+  background: #2e344a !important;
+  transition: all ease 0.4s;
+  border: 1px solid #2e344a !important;
 }
 
-.nav-menu.nav-menu-social>li.add-listing.black-bg:focus,
-.nav-menu.nav-menu-social>li.add-listing.black-bg:hover {
-    background: #da0b4e !important;
-    border: 1px solid #da0b4e !important;
+.nav-menu.nav-menu-social > li.add-listing.black-bg:focus,
+.nav-menu.nav-menu-social > li.add-listing.black-bg:hover {
+  background: #da0b4e !important;
+  border: 1px solid #da0b4e !important;
 }
 
-.nav-menu.nav-menu-social>li.add-listing.black-bg:focus a,
-.nav-menu.nav-menu-social>li.add-listing.black-bg:hover a {
-    color: #ffffff !important;
+.nav-menu.nav-menu-social > li.add-listing.black-bg:focus a,
+.nav-menu.nav-menu-social > li.add-listing.black-bg:hover a {
+  color: #ffffff !important;
 }
 
 /*-------------- Green Color Option --------------------*/
@@ -226,7 +241,12 @@ a:focus,
 .green-skin .range-slider .ui-slider .ui-slider-handle,
 .green-skin .range-slider .ui-widget-header,
 .green-skin .pricing-bottom .btn-pricing:hover,
-.green-skin .pricing-bottom .btn-pricing:focus .green-skin .select2-container--default .select2-results__option--highlighted[aria-selected],
+.green-skin
+  .pricing-bottom
+  .btn-pricing:focus
+  .green-skin
+  .select2-container--default
+  .select2-results__option--highlighted[aria-selected],
 .green-skin .pagination li:first-child a,
 .green-skin .btn.btn-theme,
 .green-skin .btn.btn-theme:hover,
@@ -244,22 +264,22 @@ a:focus,
 .green-skin .home-slider-desc .read-more,
 .green-skin .nav-tabs .nav-item.show .nav-link,
 .green-skin .nav-tabs .nav-link.active,
-.green-skin .checkbox-custom:checked+.checkbox-custom-label:before,
-.green-skin .radio-custom:checked+.radio-custom-label:before,
+.green-skin .checkbox-custom:checked + .checkbox-custom-label:before,
+.green-skin .radio-custom:checked + .radio-custom-label:before,
 .green-skin .btn.pop-login,
 .green-skin .single-widgets.widget_search form button,
 .green-skin .single-widgets.widget_tags ul li a:hover,
 .green-skin .single-widgets.widget_tags ul li a:focus,
-.green-skin .pagination>.active>a,
-.green-skin .pagination>.active>a:focus,
-.green-skin .pagination>.active>a:hover,
-.green-skin .pagination>.active>span,
-.green-skin .pagination>.active>span:focus,
-.green-skin .pagination>.active>span:hover,
-.green-skin .pagination>li>a:focus,
-.green-skin .pagination>li>a:hover {
-    background-color: #00ba74;
-    background: #00ba74;
+.green-skin .pagination > .active > a,
+.green-skin .pagination > .active > a:focus,
+.green-skin .pagination > .active > a:hover,
+.green-skin .pagination > .active > span,
+.green-skin .pagination > .active > span:focus,
+.green-skin .pagination > .active > span:hover,
+.green-skin .pagination > li > a:focus,
+.green-skin .pagination > li > a:hover {
+  background-color: #00ba74;
+  background: #00ba74;
 }
 
 .green-skin a.link:hover,
@@ -271,7 +291,7 @@ a:focus,
 .green-skin .bl-continue,
 .green-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
 .green-skin nav .menu li a.active,
-.green-skin nav .menu li.dropdown.open>a,
+.green-skin nav .menu li.dropdown.open > a,
 .green-skin nav .menu .mg-menu li a i,
 .green-skin nav .menu li a:hover,
 .green-skin .recommended .pr-value,
@@ -284,21 +304,30 @@ a:focus,
 .green-skin span.mod-close,
 .green-skin .blog-page .blog-details blockquote .icon,
 .green-skin .single-post-pagination .post-pagination-center-grid a,
-.green-skin .blog-page .blog-details .comment-area .all-comments article .comment-details .comment-meta .comment-left-meta .comment-date,
+.green-skin
+  .blog-page
+  .blog-details
+  .comment-area
+  .all-comments
+  article
+  .comment-details
+  .comment-meta
+  .comment-left-meta
+  .comment-date,
 .green-skin .cn-info-icon i,
 .green-skin .client-info h5,
 .green-skin .listing-card-info-price {
-    color: #00ba74;
+  color: #00ba74;
 }
 
-.green-skin .pagination>.active>a,
-.green-skin .pagination>.active>a:focus,
-.green-skin .pagination>.active>a:hover,
-.green-skin .pagination>.active>span,
-.green-skin .pagination>.active>span:focus,
-.green-skin .pagination>.active>span:hover,
-.green-skin .pagination>li>a:focus,
-.green-skin .pagination>li>a:hover,
+.green-skin .pagination > .active > a,
+.green-skin .pagination > .active > a:focus,
+.green-skin .pagination > .active > a:hover,
+.green-skin .pagination > .active > span,
+.green-skin .pagination > .active > span:focus,
+.green-skin .pagination > .active > span:hover,
+.green-skin .pagination > li > a:focus,
+.green-skin .pagination > li > a:hover,
 .green-skin .pagination li:first-child a,
 .green-skin .range-slider .ui-slider .ui-slider-handle,
 .green-skin .attributes li.submit-attri.theme-log a,
@@ -321,17 +350,17 @@ a:focus,
 .green-skin .btn.pop-login,
 .green-skin .single-widgets.widget_tags ul li a:hover,
 .green-skin .single-widgets.widget_tags ul li a:focus {
-    border-color: #00ba74;
+  border-color: #00ba74;
 }
 
 .green-skin li.login-attri.theme-log a {
-    box-shadow: 0 8px 5px rgba(0, 186, 116, 0.2);
-    -webkit-box-shadow: 0 8px 5px rgba(0, 186, 116, 0.2);
+  box-shadow: 0 8px 5px rgba(0, 186, 116, 0.2);
+  -webkit-box-shadow: 0 8px 5px rgba(0, 186, 116, 0.2);
 }
 
 .green-skin .btn.btn-theme-light,
 .green-skin .theme-bg-light {
-    background: rgba(0, 186, 116, 0.1);
+  background: rgba(0, 186, 116, 0.1);
 }
 
 /*-------------- Blue Color Option --------------------*/
@@ -342,7 +371,12 @@ a:focus,
 .blue-skin .range-slider .ui-slider .ui-slider-handle,
 .blue-skin .range-slider .ui-widget-header,
 .blue-skin .pricing-bottom .btn-pricing:hover,
-.blue-skin .pricing-bottom .btn-pricing:focus .blue-skin .select2-container--default .select2-results__option--highlighted[aria-selected],
+.blue-skin
+  .pricing-bottom
+  .btn-pricing:focus
+  .blue-skin
+  .select2-container--default
+  .select2-results__option--highlighted[aria-selected],
 .blue-skin .pagination li:first-child a,
 .blue-skin .btn.btn-theme,
 .blue-skin .btn.btn-theme:hover,
@@ -360,22 +394,22 @@ a:focus,
 .blue-skin .home-slider-desc .read-more,
 .blue-skin .nav-tabs .nav-item.show .nav-link,
 .blue-skin .nav-tabs .nav-link.active,
-.blue-skin .checkbox-custom:checked+.checkbox-custom-label:before,
-.blue-skin .radio-custom:checked+.radio-custom-label:before,
+.blue-skin .checkbox-custom:checked + .checkbox-custom-label:before,
+.blue-skin .radio-custom:checked + .radio-custom-label:before,
 .blue-skin .btn.pop-login,
 .blue-skin .single-widgets.widget_search form button,
 .blue-skin .single-widgets.widget_tags ul li a:hover,
 .blue-skin .single-widgets.widget_tags ul li a:focus,
-.blue-skin .pagination>.active>a,
-.blue-skin .pagination>.active>a:focus,
-.blue-skin .pagination>.active>a:hover,
-.blue-skin .pagination>.active>span,
-.blue-skin .pagination>.active>span:focus,
-.blue-skin .pagination>.active>span:hover,
-.blue-skin .pagination>li>a:focus,
-.blue-skin .pagination>li>a:hover {
-    background-color: #0058f3;
-    background: #0058f3;
+.blue-skin .pagination > .active > a,
+.blue-skin .pagination > .active > a:focus,
+.blue-skin .pagination > .active > a:hover,
+.blue-skin .pagination > .active > span,
+.blue-skin .pagination > .active > span:focus,
+.blue-skin .pagination > .active > span:hover,
+.blue-skin .pagination > li > a:focus,
+.blue-skin .pagination > li > a:hover {
+  background-color: #0058f3;
+  background: #0058f3;
 }
 
 .blue-skin a.link:hover,
@@ -387,7 +421,7 @@ a:focus,
 .blue-skin .bl-continue,
 .blue-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
 .blue-skin nav .menu li a.active,
-.blue-skin nav .menu li.dropdown.open>a,
+.blue-skin nav .menu li.dropdown.open > a,
 .blue-skin nav .menu .mg-menu li a i,
 .blue-skin nav .menu li a:hover,
 .blue-skin .recommended .pr-value,
@@ -400,21 +434,30 @@ a:focus,
 .blue-skin span.mod-close,
 .blue-skin .blog-page .blog-details blockquote .icon,
 .blue-skin .single-post-pagination .post-pagination-center-grid a,
-.blue-skin .blog-page .blog-details .comment-area .all-comments article .comment-details .comment-meta .comment-left-meta .comment-date,
+.blue-skin
+  .blog-page
+  .blog-details
+  .comment-area
+  .all-comments
+  article
+  .comment-details
+  .comment-meta
+  .comment-left-meta
+  .comment-date,
 .blue-skin .cn-info-icon i,
 .blue-skin .client-info h5,
 .blue-skin .listing-card-info-price {
-    color: #0058f3;
+  color: #0058f3;
 }
 
-.blue-skin .pagination>.active>a,
-.blue-skin .pagination>.active>a:focus,
-.blue-skin .pagination>.active>a:hover,
-.blue-skin .pagination>.active>span,
-.blue-skin .pagination>.active>span:focus,
-.blue-skin .pagination>.active>span:hover,
-.blue-skin .pagination>li>a:focus,
-.blue-skin .pagination>li>a:hover,
+.blue-skin .pagination > .active > a,
+.blue-skin .pagination > .active > a:focus,
+.blue-skin .pagination > .active > a:hover,
+.blue-skin .pagination > .active > span,
+.blue-skin .pagination > .active > span:focus,
+.blue-skin .pagination > .active > span:hover,
+.blue-skin .pagination > li > a:focus,
+.blue-skin .pagination > li > a:hover,
 .blue-skin .pagination li:first-child a,
 .blue-skin .range-slider .ui-slider .ui-slider-handle,
 .blue-skin .attributes li.submit-attri.theme-log a,
@@ -437,17 +480,17 @@ a:focus,
 .blue-skin .btn.pop-login,
 .blue-skin .single-widgets.widget_tags ul li a:hover,
 .blue-skin .single-widgets.widget_tags ul li a:focus {
-    border-color: #0058f3;
+  border-color: #0058f3;
 }
 
 .blue-skin li.login-attri.theme-log a {
-    box-shadow: 0 8px 5px rgba(0, 88, 243, 0.2);
-    -webkit-box-shadow: 0 8px 5px rgba(0, 88, 243, 0.2);
+  box-shadow: 0 8px 5px rgba(0, 88, 243, 0.2);
+  -webkit-box-shadow: 0 8px 5px rgba(0, 88, 243, 0.2);
 }
 
 .blue-skin .btn.btn-theme-light,
 .blue-skin .theme-bg-light {
-    background: rgba(0, 88, 243, 0.1);
+  background: rgba(0, 88, 243, 0.1);
 }
 
 /*-------------- Yellow Color Option --------------------*/
@@ -458,7 +501,12 @@ a:focus,
 .yellow-skin .range-slider .ui-slider .ui-slider-handle,
 .yellow-skin .range-slider .ui-widget-header,
 .yellow-skin .pricing-bottom .btn-pricing:hover,
-.yellow-skin .pricing-bottom .btn-pricing:focus .yellow-skin .select2-container--default .select2-results__option--highlighted[aria-selected],
+.yellow-skin
+  .pricing-bottom
+  .btn-pricing:focus
+  .yellow-skin
+  .select2-container--default
+  .select2-results__option--highlighted[aria-selected],
 .yellow-skin .pagination li:first-child a,
 .yellow-skin .btn.btn-theme,
 .yellow-skin .btn.btn-theme:hover,
@@ -476,22 +524,22 @@ a:focus,
 .yellow-skin .home-slider-desc .read-more,
 .yellow-skin .nav-tabs .nav-item.show .nav-link,
 .yellow-skin .nav-tabs .nav-link.active,
-.yellow-skin .checkbox-custom:checked+.checkbox-custom-label:before,
-.yellow-skin .radio-custom:checked+.radio-custom-label:before,
+.yellow-skin .checkbox-custom:checked + .checkbox-custom-label:before,
+.yellow-skin .radio-custom:checked + .radio-custom-label:before,
 .yellow-skin .btn.pop-login,
 .yellow-skin .single-widgets.widget_search form button,
 .yellow-skin .single-widgets.widget_tags ul li a:hover,
 .yellow-skin .single-widgets.widget_tags ul li a:focus,
-.yellow-skin .pagination>.active>a,
-.yellow-skin .pagination>.active>a:focus,
-.yellow-skin .pagination>.active>a:hover,
-.yellow-skin .pagination>.active>span,
-.yellow-skin .pagination>.active>span:focus,
-.yellow-skin .pagination>.active>span:hover,
-.yellow-skin .pagination>li>a:focus,
-.yellow-skin .pagination>li>a:hover {
-    background-color: #ffa50d;
-    background: #ffa50d;
+.yellow-skin .pagination > .active > a,
+.yellow-skin .pagination > .active > a:focus,
+.yellow-skin .pagination > .active > a:hover,
+.yellow-skin .pagination > .active > span,
+.yellow-skin .pagination > .active > span:focus,
+.yellow-skin .pagination > .active > span:hover,
+.yellow-skin .pagination > li > a:focus,
+.yellow-skin .pagination > li > a:hover {
+  background-color: #ffa50d;
+  background: #ffa50d;
 }
 
 .yellow-skin a.link:hover,
@@ -501,9 +549,13 @@ a:focus,
 .yellow-skin .theme-cl,
 .yellow-skin .btn.btn-theme-light,
 .yellow-skin .bl-continue,
-.yellow-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.yellow-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .yellow-skin nav .menu li a.active,
-.yellow-skin nav .menu li.dropdown.open>a,
+.yellow-skin nav .menu li.dropdown.open > a,
 .yellow-skin nav .menu .mg-menu li a i,
 .yellow-skin nav .menu li a:hover,
 .yellow-skin .recommended .pr-value,
@@ -516,25 +568,38 @@ a:focus,
 .yellow-skin span.mod-close,
 .yellow-skin .blog-page .blog-details blockquote .icon,
 .yellow-skin .single-post-pagination .post-pagination-center-grid a,
-.yellow-skin .blog-page .blog-details .comment-area .all-comments article .comment-details .comment-meta .comment-left-meta .comment-date,
+.yellow-skin
+  .blog-page
+  .blog-details
+  .comment-area
+  .all-comments
+  article
+  .comment-details
+  .comment-meta
+  .comment-left-meta
+  .comment-date,
 .yellow-skin .cn-info-icon i,
 .yellow-skin .client-info h5,
 .yellow-skin .listing-card-info-price {
-    color: #ffa50d;
+  color: #ffa50d;
 }
 
-.yellow-skin .pagination>.active>a,
-.yellow-skin .pagination>.active>a:focus,
-.yellow-skin .pagination>.active>a:hover,
-.yellow-skin .pagination>.active>span,
-.yellow-skin .pagination>.active>span:focus,
-.yellow-skin .pagination>.active>span:hover,
-.yellow-skin .pagination>li>a:focus,
-.yellow-skin .pagination>li>a:hover,
+.yellow-skin .pagination > .active > a,
+.yellow-skin .pagination > .active > a:focus,
+.yellow-skin .pagination > .active > a:hover,
+.yellow-skin .pagination > .active > span,
+.yellow-skin .pagination > .active > span:focus,
+.yellow-skin .pagination > .active > span:hover,
+.yellow-skin .pagination > li > a:focus,
+.yellow-skin .pagination > li > a:hover,
 .yellow-skin .pagination li:first-child a,
 .yellow-skin .range-slider .ui-slider .ui-slider-handle,
 .yellow-skin .attributes li.submit-attri.theme-log a,
-.yellow-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.yellow-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .yellow-skin .btn.btn-theme,
 .yellow-skin .btn-theme-2:hover,
 .yellow-skin .btn-theme-2:focus,
@@ -553,17 +618,17 @@ a:focus,
 .yellow-skin .btn.pop-login,
 .yellow-skin .single-widgets.widget_tags ul li a:hover,
 .yellow-skin .single-widgets.widget_tags ul li a:focus {
-    border-color: #ffa50d;
+  border-color: #ffa50d;
 }
 
 .yellow-skin li.login-attri.theme-log a {
-    box-shadow: 0 8px 5px rgba(255, 165, 13, 0.2);
-    -webkit-box-shadow: 0 8px 5px rgba(255, 165, 13, 0.2);
+  box-shadow: 0 8px 5px rgba(255, 165, 13, 0.2);
+  -webkit-box-shadow: 0 8px 5px rgba(255, 165, 13, 0.2);
 }
 
 .yellow-skin .btn.btn-theme-light,
 .yellow-skin .theme-bg-light {
-    background: rgba(255, 165, 13, 0.1);
+  background: rgba(255, 165, 13, 0.1);
 }
 
 /*-------------- Blue Dark Color Option --------------------*/
@@ -574,7 +639,12 @@ a:focus,
 .darkblue-skin .range-slider .ui-slider .ui-slider-handle,
 .darkblue-skin .range-slider .ui-widget-header,
 .darkblue-skin .pricing-bottom .btn-pricing:hover,
-.darkblue-skin .pricing-bottom .btn-pricing:focus .darkblue-skin .select2-container--default .select2-results__option--highlighted[aria-selected],
+.darkblue-skin
+  .pricing-bottom
+  .btn-pricing:focus
+  .darkblue-skin
+  .select2-container--default
+  .select2-results__option--highlighted[aria-selected],
 .darkblue-skin .pagination li:first-child a,
 .darkblue-skin .btn.btn-theme,
 .darkblue-skin .btn.btn-theme:hover,
@@ -592,22 +662,22 @@ a:focus,
 .darkblue-skin .home-slider-desc .read-more,
 .darkblue-skin .nav-tabs .nav-item.show .nav-link,
 .darkblue-skin .nav-tabs .nav-link.active,
-.darkblue-skin .checkbox-custom:checked+.checkbox-custom-label:before,
-.darkblue-skin .radio-custom:checked+.radio-custom-label:before,
+.darkblue-skin .checkbox-custom:checked + .checkbox-custom-label:before,
+.darkblue-skin .radio-custom:checked + .radio-custom-label:before,
 .darkblue-skin .btn.pop-login,
 .darkblue-skin .single-widgets.widget_search form button,
 .darkblue-skin .single-widgets.widget_tags ul li a:hover,
 .darkblue-skin .single-widgets.widget_tags ul li a:focus,
-.darkblue-skin .pagination>.active>a,
-.darkblue-skin .pagination>.active>a:focus,
-.darkblue-skin .pagination>.active>a:hover,
-.darkblue-skin .pagination>.active>span,
-.darkblue-skin .pagination>.active>span:focus,
-.darkblue-skin .pagination>.active>span:hover,
-.darkblue-skin .pagination>li>a:focus,
-.darkblue-skin .pagination>li>a:hover {
-    background-color: #0F52BA;
-    background: #0F52BA;
+.darkblue-skin .pagination > .active > a,
+.darkblue-skin .pagination > .active > a:focus,
+.darkblue-skin .pagination > .active > a:hover,
+.darkblue-skin .pagination > .active > span,
+.darkblue-skin .pagination > .active > span:focus,
+.darkblue-skin .pagination > .active > span:hover,
+.darkblue-skin .pagination > li > a:focus,
+.darkblue-skin .pagination > li > a:hover {
+  background-color: #0f52ba;
+  background: #0f52ba;
 }
 
 .darkblue-skin a.link:hover,
@@ -617,9 +687,13 @@ a:focus,
 .darkblue-skin .theme-cl,
 .darkblue-skin .btn.btn-theme-light,
 .darkblue-skin .bl-continue,
-.darkblue-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.darkblue-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .darkblue-skin nav .menu li a.active,
-.darkblue-skin nav .menu li.dropdown.open>a,
+.darkblue-skin nav .menu li.dropdown.open > a,
 .darkblue-skin nav .menu .mg-menu li a i,
 .darkblue-skin nav .menu li a:hover,
 .darkblue-skin .recommended .pr-value,
@@ -632,25 +706,38 @@ a:focus,
 .darkblue-skin span.mod-close,
 .darkblue-skin .blog-page .blog-details blockquote .icon,
 .darkblue-skin .single-post-pagination .post-pagination-center-grid a,
-.darkblue-skin .blog-page .blog-details .comment-area .all-comments article .comment-details .comment-meta .comment-left-meta .comment-date,
+.darkblue-skin
+  .blog-page
+  .blog-details
+  .comment-area
+  .all-comments
+  article
+  .comment-details
+  .comment-meta
+  .comment-left-meta
+  .comment-date,
 .darkblue-skin .cn-info-icon i,
 .darkblue-skin .client-info h5,
 .darkblue-skin .listing-card-info-price {
-    color: #0F52BA;
+  color: #0f52ba;
 }
 
-.darkblue-skin .pagination>.active>a,
-.darkblue-skin .pagination>.active>a:focus,
-.darkblue-skin .pagination>.active>a:hover,
-.darkblue-skin .pagination>.active>span,
-.darkblue-skin .pagination>.active>span:focus,
-.darkblue-skin .pagination>.active>span:hover,
-.darkblue-skin .pagination>li>a:focus,
-.darkblue-skin .pagination>li>a:hover,
+.darkblue-skin .pagination > .active > a,
+.darkblue-skin .pagination > .active > a:focus,
+.darkblue-skin .pagination > .active > a:hover,
+.darkblue-skin .pagination > .active > span,
+.darkblue-skin .pagination > .active > span:focus,
+.darkblue-skin .pagination > .active > span:hover,
+.darkblue-skin .pagination > li > a:focus,
+.darkblue-skin .pagination > li > a:hover,
 .darkblue-skin .pagination li:first-child a,
 .darkblue-skin .range-slider .ui-slider .ui-slider-handle,
 .darkblue-skin .attributes li.submit-attri.theme-log a,
-.darkblue-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.darkblue-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .darkblue-skin .btn.btn-theme,
 .darkblue-skin .btn-theme-2:hover,
 .darkblue-skin .btn-theme-2:focus,
@@ -669,17 +756,17 @@ a:focus,
 .darkblue-skin .btn.pop-login,
 .darkblue-skin .single-widgets.widget_tags ul li a:hover,
 .darkblue-skin .single-widgets.widget_tags ul li a:focus {
-    border-color: #0F52BA;
+  border-color: #0f52ba;
 }
 
 .darkblue-skin li.login-attri.theme-log a {
-    box-shadow: 0 8px 5px rgba(15, 82, 186, 0.2);
-    -webkit-box-shadow: 0 8px 5px rgba(15, 82, 186, 0.2);
+  box-shadow: 0 8px 5px rgba(15, 82, 186, 0.2);
+  -webkit-box-shadow: 0 8px 5px rgba(15, 82, 186, 0.2);
 }
 
 .darkblue-skin .btn.btn-theme-light,
 .darkblue-skin .theme-bg-light {
-    background: rgba(15, 82, 186, 0.1);
+  background: rgba(15, 82, 186, 0.1);
 }
 
 /*-------------- Ocean Green Color Option --------------------*/
@@ -690,7 +777,12 @@ a:focus,
 .oceangreen-skin .range-slider .ui-slider .ui-slider-handle,
 .oceangreen-skin .range-slider .ui-widget-header,
 .oceangreen-skin .pricing-bottom .btn-pricing:hover,
-.oceangreen-skin .pricing-bottom .btn-pricing:focus .oceangreen-skin .select2-container--default .select2-results__option--highlighted[aria-selected],
+.oceangreen-skin
+  .pricing-bottom
+  .btn-pricing:focus
+  .oceangreen-skin
+  .select2-container--default
+  .select2-results__option--highlighted[aria-selected],
 .oceangreen-skin .pagination li:first-child a,
 .oceangreen-skin .btn.btn-theme,
 .oceangreen-skin .btn.btn-theme:hover,
@@ -708,22 +800,22 @@ a:focus,
 .oceangreen-skin .home-slider-desc .read-more,
 .oceangreen-skin .nav-tabs .nav-item.show .nav-link,
 .oceangreen-skin .nav-tabs .nav-link.active,
-.oceangreen-skin .checkbox-custom:checked+.checkbox-custom-label:before,
-.oceangreen-skin .radio-custom:checked+.radio-custom-label:before,
+.oceangreen-skin .checkbox-custom:checked + .checkbox-custom-label:before,
+.oceangreen-skin .radio-custom:checked + .radio-custom-label:before,
 .oceangreen-skin .btn.pop-login,
 .oceangreen-skin .single-widgets.widget_search form button,
 .oceangreen-skin .single-widgets.widget_tags ul li a:hover,
 .oceangreen-skin .single-widgets.widget_tags ul li a:focus,
-.oceangreen-skin .pagination>.active>a,
-.oceangreen-skin .pagination>.active>a:focus,
-.oceangreen-skin .pagination>.active>a:hover,
-.oceangreen-skin .pagination>.active>span,
-.oceangreen-skin .pagination>.active>span:focus,
-.oceangreen-skin .pagination>.active>span:hover,
-.oceangreen-skin .pagination>li>a:focus,
-.oceangreen-skin .pagination>li>a:hover {
-    background-color: #00424a;
-    background: #00424a;
+.oceangreen-skin .pagination > .active > a,
+.oceangreen-skin .pagination > .active > a:focus,
+.oceangreen-skin .pagination > .active > a:hover,
+.oceangreen-skin .pagination > .active > span,
+.oceangreen-skin .pagination > .active > span:focus,
+.oceangreen-skin .pagination > .active > span:hover,
+.oceangreen-skin .pagination > li > a:focus,
+.oceangreen-skin .pagination > li > a:hover {
+  background-color: #00424a;
+  background: #00424a;
 }
 
 .oceangreen-skin a.link:hover,
@@ -733,9 +825,13 @@ a:focus,
 .oceangreen-skin .theme-cl,
 .oceangreen-skin .btn.btn-theme-light,
 .oceangreen-skin .bl-continue,
-.oceangreen-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.oceangreen-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .oceangreen-skin nav .menu li a.active,
-.oceangreen-skin nav .menu li.dropdown.open>a,
+.oceangreen-skin nav .menu li.dropdown.open > a,
 .oceangreen-skin nav .menu .mg-menu li a i,
 .oceangreen-skin nav .menu li a:hover,
 .oceangreen-skin .recommended .pr-value,
@@ -748,25 +844,38 @@ a:focus,
 .oceangreen-skin span.mod-close,
 .oceangreen-skin .blog-page .blog-details blockquote .icon,
 .oceangreen-skin .single-post-pagination .post-pagination-center-grid a,
-.oceangreen-skin .blog-page .blog-details .comment-area .all-comments article .comment-details .comment-meta .comment-left-meta .comment-date,
+.oceangreen-skin
+  .blog-page
+  .blog-details
+  .comment-area
+  .all-comments
+  article
+  .comment-details
+  .comment-meta
+  .comment-left-meta
+  .comment-date,
 .oceangreen-skin .cn-info-icon i,
 .oceangreen-skin .client-info h5,
 .oceangreen-skin .listing-card-info-price {
-    color: #00424a;
+  color: #00424a;
 }
 
-.oceangreen-skin .pagination>.active>a,
-.oceangreen-skin .pagination>.active>a:focus,
-.oceangreen-skin .pagination>.active>a:hover,
-.oceangreen-skin .pagination>.active>span,
-.oceangreen-skin .pagination>.active>span:focus,
-.oceangreen-skin .pagination>.active>span:hover,
-.oceangreen-skin .pagination>li>a:focus,
-.oceangreen-skin .pagination>li>a:hover,
+.oceangreen-skin .pagination > .active > a,
+.oceangreen-skin .pagination > .active > a:focus,
+.oceangreen-skin .pagination > .active > a:hover,
+.oceangreen-skin .pagination > .active > span,
+.oceangreen-skin .pagination > .active > span:focus,
+.oceangreen-skin .pagination > .active > span:hover,
+.oceangreen-skin .pagination > li > a:focus,
+.oceangreen-skin .pagination > li > a:hover,
 .oceangreen-skin .pagination li:first-child a,
 .oceangreen-skin .range-slider .ui-slider .ui-slider-handle,
 .oceangreen-skin .attributes li.submit-attri.theme-log a,
-.oceangreen-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.oceangreen-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .oceangreen-skin .btn.btn-theme,
 .oceangreen-skin .btn-theme-2:hover,
 .oceangreen-skin .btn-theme-2:focus,
@@ -785,17 +894,17 @@ a:focus,
 .oceangreen-skin .btn.pop-login,
 .oceangreen-skin .single-widgets.widget_tags ul li a:hover,
 .oceangreen-skin .single-widgets.widget_tags ul li a:focus {
-    border-color: #00424a;
+  border-color: #00424a;
 }
 
 .oceangreen-skin li.login-attri.theme-log a {
-    box-shadow: 0 8px 5px rgba(0, 168, 119, 0.2);
-    -webkit-box-shadow: 0 8px 5px rgba(0, 168, 119, 0.2);
+  box-shadow: 0 8px 5px rgba(0, 168, 119, 0.2);
+  -webkit-box-shadow: 0 8px 5px rgba(0, 168, 119, 0.2);
 }
 
 .oceangreen-skin .btn.btn-theme-light,
 .oceangreen-skin .theme-bg-light {
-    background: rgba(0, 168, 119, 0.1);
+  background: rgba(0, 168, 119, 0.1);
 }
 
 /*-------------- Purple Color Option --------------------*/
@@ -806,7 +915,12 @@ a:focus,
 .purple-skin .range-slider .ui-slider .ui-slider-handle,
 .purple-skin .range-slider .ui-widget-header,
 .purple-skin .pricing-bottom .btn-pricing:hover,
-.purple-skin .pricing-bottom .btn-pricing:focus .purple-skin .select2-container--default .select2-results__option--highlighted[aria-selected],
+.purple-skin
+  .pricing-bottom
+  .btn-pricing:focus
+  .purple-skin
+  .select2-container--default
+  .select2-results__option--highlighted[aria-selected],
 .purple-skin .pagination li:first-child a,
 .purple-skin .btn.btn-theme,
 .purple-skin .btn.btn-theme:hover,
@@ -824,22 +938,22 @@ a:focus,
 .purple-skin .home-slider-desc .read-more,
 .purple-skin .nav-tabs .nav-item.show .nav-link,
 .purple-skin .nav-tabs .nav-link.active,
-.purple-skin .checkbox-custom:checked+.checkbox-custom-label:before,
-.purple-skin .radio-custom:checked+.radio-custom-label:before,
+.purple-skin .checkbox-custom:checked + .checkbox-custom-label:before,
+.purple-skin .radio-custom:checked + .radio-custom-label:before,
 .purple-skin .btn.pop-login,
 .purple-skin .single-widgets.widget_search form button,
 .purple-skin .single-widgets.widget_tags ul li a:hover,
 .purple-skin .single-widgets.widget_tags ul li a:focus,
-.purple-skin .pagination>.active>a,
-.purple-skin .pagination>.active>a:focus,
-.purple-skin .pagination>.active>a:hover,
-.purple-skin .pagination>.active>span,
-.purple-skin .pagination>.active>span:focus,
-.purple-skin .pagination>.active>span:hover,
-.purple-skin .pagination>li>a:focus,
-.purple-skin .pagination>li>a:hover {
-    background-color: #7065ef;
-    background: #7065ef;
+.purple-skin .pagination > .active > a,
+.purple-skin .pagination > .active > a:focus,
+.purple-skin .pagination > .active > a:hover,
+.purple-skin .pagination > .active > span,
+.purple-skin .pagination > .active > span:focus,
+.purple-skin .pagination > .active > span:hover,
+.purple-skin .pagination > li > a:focus,
+.purple-skin .pagination > li > a:hover {
+  background-color: #7065ef;
+  background: #7065ef;
 }
 
 .purple-skin a.link:hover,
@@ -849,9 +963,13 @@ a:focus,
 .purple-skin .theme-cl,
 .purple-skin .btn.btn-theme-light,
 .purple-skin .bl-continue,
-.purple-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.purple-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .purple-skin nav .menu li a.active,
-.purple-skin nav .menu li.dropdown.open>a,
+.purple-skin nav .menu li.dropdown.open > a,
 .purple-skin nav .menu .mg-menu li a i,
 .purple-skin nav .menu li a:hover,
 .purple-skin .recommended .pr-value,
@@ -864,25 +982,38 @@ a:focus,
 .purple-skin span.mod-close,
 .purple-skin .blog-page .blog-details blockquote .icon,
 .purple-skin .single-post-pagination .post-pagination-center-grid a,
-.purple-skin .blog-page .blog-details .comment-area .all-comments article .comment-details .comment-meta .comment-left-meta .comment-date,
+.purple-skin
+  .blog-page
+  .blog-details
+  .comment-area
+  .all-comments
+  article
+  .comment-details
+  .comment-meta
+  .comment-left-meta
+  .comment-date,
 .purple-skin .cn-info-icon i,
 .purple-skin .client-info h5,
 .purple-skin .listing-card-info-price {
-    color: #7065ef;
+  color: #7065ef;
 }
 
-.purple-skin .pagination>.active>a,
-.purple-skin .pagination>.active>a:focus,
-.purple-skin .pagination>.active>a:hover,
-.purple-skin .pagination>.active>span,
-.purple-skin .pagination>.active>span:focus,
-.purple-skin .pagination>.active>span:hover,
-.purple-skin .pagination>li>a:focus,
-.purple-skin .pagination>li>a:hover,
+.purple-skin .pagination > .active > a,
+.purple-skin .pagination > .active > a:focus,
+.purple-skin .pagination > .active > a:hover,
+.purple-skin .pagination > .active > span,
+.purple-skin .pagination > .active > span:focus,
+.purple-skin .pagination > .active > span:hover,
+.purple-skin .pagination > li > a:focus,
+.purple-skin .pagination > li > a:hover,
 .purple-skin .pagination li:first-child a,
 .purple-skin .range-slider .ui-slider .ui-slider-handle,
 .purple-skin .attributes li.submit-attri.theme-log a,
-.purple-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.purple-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .purple-skin .btn.btn-theme,
 .purple-skin .btn-theme-2:hover,
 .purple-skin .btn-theme-2:focus,
@@ -901,17 +1032,17 @@ a:focus,
 .purple-skin .btn.pop-login,
 .purple-skin .single-widgets.widget_tags ul li a:hover,
 .purple-skin .single-widgets.widget_tags ul li a:focus {
-    border-color: #7065ef;
+  border-color: #7065ef;
 }
 
 .purple-skin li.login-attri.theme-log a {
-    box-shadow: 0 8px 5px rgba(112, 101, 239, 0.2);
-    -webkit-box-shadow: 0 8px 5px rgba(112, 101, 239, 0.2);
+  box-shadow: 0 8px 5px rgba(112, 101, 239, 0.2);
+  -webkit-box-shadow: 0 8px 5px rgba(112, 101, 239, 0.2);
 }
 
 .purple-skin .btn.btn-theme-light,
 .purple-skin .theme-bg-light {
-    background: rgba(112, 101, 239, 0.1);
+  background: rgba(112, 101, 239, 0.1);
 }
 
 /*-------------- Good Red Color Option --------------------*/
@@ -922,7 +1053,12 @@ a:focus,
 .goodred-skin .range-slider .ui-slider .ui-slider-handle,
 .goodred-skin .range-slider .ui-widget-header,
 .goodred-skin .pricing-bottom .btn-pricing:hover,
-.goodred-skin .pricing-bottom .btn-pricing:focus .goodred-skin .select2-container--default .select2-results__option--highlighted[aria-selected],
+.goodred-skin
+  .pricing-bottom
+  .btn-pricing:focus
+  .goodred-skin
+  .select2-container--default
+  .select2-results__option--highlighted[aria-selected],
 .goodred-skin .pagination li:first-child a,
 .goodred-skin .btn.btn-theme,
 .goodred-skin .btn.btn-theme:hover,
@@ -940,22 +1076,22 @@ a:focus,
 .goodred-skin .home-slider-desc .read-more,
 .goodred-skin .nav-tabs .nav-item.show .nav-link,
 .goodred-skin .nav-tabs .nav-link.active,
-.goodred-skin .checkbox-custom:checked+.checkbox-custom-label:before,
-.goodred-skin .radio-custom:checked+.radio-custom-label:before,
+.goodred-skin .checkbox-custom:checked + .checkbox-custom-label:before,
+.goodred-skin .radio-custom:checked + .radio-custom-label:before,
 .goodred-skin .btn.pop-login,
 .goodred-skin .single-widgets.widget_search form button,
 .goodred-skin .single-widgets.widget_tags ul li a:hover,
 .goodred-skin .single-widgets.widget_tags ul li a:focus,
-.goodred-skin .pagination>.active>a,
-.goodred-skin .pagination>.active>a:focus,
-.goodred-skin .pagination>.active>a:hover,
-.goodred-skin .pagination>.active>span,
-.goodred-skin .pagination>.active>span:focus,
-.goodred-skin .pagination>.active>span:hover,
-.goodred-skin .pagination>li>a:focus,
-.goodred-skin .pagination>li>a:hover {
-    background-color: #f40c43;
-    background: #f40c43;
+.goodred-skin .pagination > .active > a,
+.goodred-skin .pagination > .active > a:focus,
+.goodred-skin .pagination > .active > a:hover,
+.goodred-skin .pagination > .active > span,
+.goodred-skin .pagination > .active > span:focus,
+.goodred-skin .pagination > .active > span:hover,
+.goodred-skin .pagination > li > a:focus,
+.goodred-skin .pagination > li > a:hover {
+  background-color: #f40c43;
+  background: #f40c43;
 }
 
 .goodred-skin a.link:hover,
@@ -965,9 +1101,13 @@ a:focus,
 .goodred-skin .theme-cl,
 .goodred-skin .btn.btn-theme-light,
 .goodred-skin .bl-continue,
-.goodred-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.goodred-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .goodred-skin nav .menu li a.active,
-.goodred-skin nav .menu li.dropdown.open>a,
+.goodred-skin nav .menu li.dropdown.open > a,
 .goodred-skin nav .menu .mg-menu li a i,
 .goodred-skin nav .menu li a:hover,
 .goodred-skin .recommended .pr-value,
@@ -980,25 +1120,38 @@ a:focus,
 .goodred-skin span.mod-close,
 .goodred-skin .blog-page .blog-details blockquote .icon,
 .goodred-skin .single-post-pagination .post-pagination-center-grid a,
-.goodred-skin .blog-page .blog-details .comment-area .all-comments article .comment-details .comment-meta .comment-left-meta .comment-date,
+.goodred-skin
+  .blog-page
+  .blog-details
+  .comment-area
+  .all-comments
+  article
+  .comment-details
+  .comment-meta
+  .comment-left-meta
+  .comment-date,
 .goodred-skin .cn-info-icon i,
 .goodred-skin .client-info h5,
 .goodred-skin .listing-card-info-price {
-    color: #f40c43;
+  color: #f40c43;
 }
 
-.goodred-skin .pagination>.active>a,
-.goodred-skin .pagination>.active>a:focus,
-.goodred-skin .pagination>.active>a:hover,
-.goodred-skin .pagination>.active>span,
-.goodred-skin .pagination>.active>span:focus,
-.goodred-skin .pagination>.active>span:hover,
-.goodred-skin .pagination>li>a:focus,
-.goodred-skin .pagination>li>a:hover,
+.goodred-skin .pagination > .active > a,
+.goodred-skin .pagination > .active > a:focus,
+.goodred-skin .pagination > .active > a:hover,
+.goodred-skin .pagination > .active > span,
+.goodred-skin .pagination > .active > span:focus,
+.goodred-skin .pagination > .active > span:hover,
+.goodred-skin .pagination > li > a:focus,
+.goodred-skin .pagination > li > a:hover,
 .goodred-skin .pagination li:first-child a,
 .goodred-skin .range-slider .ui-slider .ui-slider-handle,
 .goodred-skin .attributes li.submit-attri.theme-log a,
-.goodred-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.goodred-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .goodred-skin .btn.btn-theme,
 .goodred-skin .btn-theme-2:hover,
 .goodred-skin .btn-theme-2:focus,
@@ -1017,17 +1170,17 @@ a:focus,
 .goodred-skin .btn.pop-login,
 .goodred-skin .single-widgets.widget_tags ul li a:hover,
 .goodred-skin .single-widgets.widget_tags ul li a:focus {
-    border-color: #f40c43;
+  border-color: #f40c43;
 }
 
 .goodred-skin li.login-attri.theme-log a {
-    box-shadow: 0 8px 5px rgba(244, 12, 67, 0.2);
-    -webkit-box-shadow: 0 8px 5px rgba(244, 12, 67, 0.2);
+  box-shadow: 0 8px 5px rgba(244, 12, 67, 0.2);
+  -webkit-box-shadow: 0 8px 5px rgba(244, 12, 67, 0.2);
 }
 
 .goodred-skin .btn.btn-theme-light,
 .goodred-skin .theme-bg-light {
-    background: rgba(244, 12, 67, 0.1);
+  background: rgba(244, 12, 67, 0.1);
 }
 
 /*-------------- Good Green Color Option --------------------*/
@@ -1038,7 +1191,12 @@ a:focus,
 .goodgreen-skin .range-slider .ui-slider .ui-slider-handle,
 .goodgreen-skin .range-slider .ui-widget-header,
 .goodgreen-skin .pricing-bottom .btn-pricing:hover,
-.goodgreen-skin .pricing-bottom .btn-pricing:focus .goodgreen-skin .select2-container--default .select2-results__option--highlighted[aria-selected],
+.goodgreen-skin
+  .pricing-bottom
+  .btn-pricing:focus
+  .goodgreen-skin
+  .select2-container--default
+  .select2-results__option--highlighted[aria-selected],
 .goodgreen-skin .pagination li:first-child a,
 .goodgreen-skin .btn.btn-theme,
 .goodgreen-skin .btn.btn-theme:hover,
@@ -1056,22 +1214,22 @@ a:focus,
 .goodgreen-skin .home-slider-desc .read-more,
 .goodgreen-skin .nav-tabs .nav-item.show .nav-link,
 .goodgreen-skin .nav-tabs .nav-link.active,
-.goodgreen-skin .checkbox-custom:checked+.checkbox-custom-label:before,
-.goodgreen-skin .radio-custom:checked+.radio-custom-label:before,
+.goodgreen-skin .checkbox-custom:checked + .checkbox-custom-label:before,
+.goodgreen-skin .radio-custom:checked + .radio-custom-label:before,
 .goodgreen-skin .btn.pop-login,
 .goodgreen-skin .single-widgets.widget_search form button,
 .goodgreen-skin .single-widgets.widget_tags ul li a:hover,
 .goodgreen-skin .single-widgets.widget_tags ul li a:focus,
-.goodgreen-skin .pagination>.active>a,
-.goodgreen-skin .pagination>.active>a:focus,
-.goodgreen-skin .pagination>.active>a:hover,
-.goodgreen-skin .pagination>.active>span,
-.goodgreen-skin .pagination>.active>span:focus,
-.goodgreen-skin .pagination>.active>span:hover,
-.goodgreen-skin .pagination>li>a:focus,
-.goodgreen-skin .pagination>li>a:hover {
-    background-color: #19b521;
-    background: #19b521;
+.goodgreen-skin .pagination > .active > a,
+.goodgreen-skin .pagination > .active > a:focus,
+.goodgreen-skin .pagination > .active > a:hover,
+.goodgreen-skin .pagination > .active > span,
+.goodgreen-skin .pagination > .active > span:focus,
+.goodgreen-skin .pagination > .active > span:hover,
+.goodgreen-skin .pagination > li > a:focus,
+.goodgreen-skin .pagination > li > a:hover {
+  background-color: #19b521;
+  background: #19b521;
 }
 
 .goodgreen-skin a.link:hover,
@@ -1081,9 +1239,13 @@ a:focus,
 .goodgreen-skin .theme-cl,
 .goodgreen-skin .btn.btn-theme-light,
 .goodgreen-skin .bl-continue,
-.goodgreen-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.goodgreen-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .goodgreen-skin nav .menu li a.active,
-.goodgreen-skin nav .menu li.dropdown.open>a,
+.goodgreen-skin nav .menu li.dropdown.open > a,
 .goodgreen-skin nav .menu .mg-menu li a i,
 .goodgreen-skin nav .menu li a:hover,
 .goodgreen-skin .recommended .pr-value,
@@ -1096,25 +1258,38 @@ a:focus,
 .goodgreen-skin span.mod-close,
 .goodgreen-skin .blog-page .blog-details blockquote .icon,
 .goodgreen-skin .single-post-pagination .post-pagination-center-grid a,
-.goodgreen-skin .blog-page .blog-details .comment-area .all-comments article .comment-details .comment-meta .comment-left-meta .comment-date,
+.goodgreen-skin
+  .blog-page
+  .blog-details
+  .comment-area
+  .all-comments
+  article
+  .comment-details
+  .comment-meta
+  .comment-left-meta
+  .comment-date,
 .goodgreen-skin .cn-info-icon i,
 .goodgreen-skin .client-info h5,
 .goodgreen-skin .listing-card-info-price {
-    color: #19b521;
+  color: #19b521;
 }
 
-.goodgreen-skin .pagination>.active>a,
-.goodgreen-skin .pagination>.active>a:focus,
-.goodgreen-skin .pagination>.active>a:hover,
-.goodgreen-skin .pagination>.active>span,
-.goodgreen-skin .pagination>.active>span:focus,
-.goodgreen-skin .pagination>.active>span:hover,
-.goodgreen-skin .pagination>li>a:focus,
-.goodgreen-skin .pagination>li>a:hover,
+.goodgreen-skin .pagination > .active > a,
+.goodgreen-skin .pagination > .active > a:focus,
+.goodgreen-skin .pagination > .active > a:hover,
+.goodgreen-skin .pagination > .active > span,
+.goodgreen-skin .pagination > .active > span:focus,
+.goodgreen-skin .pagination > .active > span:hover,
+.goodgreen-skin .pagination > li > a:focus,
+.goodgreen-skin .pagination > li > a:hover,
 .goodgreen-skin .pagination li:first-child a,
 .goodgreen-skin .range-slider .ui-slider .ui-slider-handle,
 .goodgreen-skin .attributes li.submit-attri.theme-log a,
-.goodgreen-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
+.goodgreen-skin
+  .header-dark-transparent.header-fixed
+  .attributes
+  li.submit-attri
+  a,
 .goodgreen-skin .btn.btn-theme,
 .goodgreen-skin .btn-theme-2:hover,
 .goodgreen-skin .btn-theme-2:focus,
@@ -1133,17 +1308,17 @@ a:focus,
 .goodgreen-skin .btn.pop-login,
 .goodgreen-skin .single-widgets.widget_tags ul li a:hover,
 .goodgreen-skin .single-widgets.widget_tags ul li a:focus {
-    border-color: #19b521;
+  border-color: #19b521;
 }
 
 .goodgreen-skin li.login-attri.theme-log a {
-    box-shadow: 0 8px 5px rgba(25, 181, 33, 0.2);
-    -webkit-box-shadow: 0 8px 5px rgba(25, 181, 33, 0.2);
+  box-shadow: 0 8px 5px rgba(25, 181, 33, 0.2);
+  -webkit-box-shadow: 0 8px 5px rgba(25, 181, 33, 0.2);
 }
 
 .goodgreen-skin .btn.btn-theme-light,
 .goodgreen-skin .theme-bg-light {
-    background: rgba(25, 181, 33, 0.1);
+  background: rgba(25, 181, 33, 0.1);
 }
 
 /*-------------- Blue 2 Color Option --------------------*/
@@ -1154,7 +1329,12 @@ a:focus,
 .blue2-skin .range-slider .ui-slider .ui-slider-handle,
 .blue2-skin .range-slider .ui-widget-header,
 .blue2-skin .pricing-bottom .btn-pricing:hover,
-.blue2-skin .pricing-bottom .btn-pricing:focus .blue2-skin .select2-container--default .select2-results__option--highlighted[aria-selected],
+.blue2-skin
+  .pricing-bottom
+  .btn-pricing:focus
+  .blue2-skin
+  .select2-container--default
+  .select2-results__option--highlighted[aria-selected],
 .blue2-skin .pagination li:first-child a,
 .blue2-skin .btn.btn-theme,
 .blue2-skin .btn.btn-theme:hover,
@@ -1172,22 +1352,22 @@ a:focus,
 .blue2-skin .home-slider-desc .read-more,
 .blue2-skin .nav-tabs .nav-item.show .nav-link,
 .blue2-skin .nav-tabs .nav-link.active,
-.blue2-skin .checkbox-custom:checked+.checkbox-custom-label:before,
-.blue2-skin .radio-custom:checked+.radio-custom-label:before,
+.blue2-skin .checkbox-custom:checked + .checkbox-custom-label:before,
+.blue2-skin .radio-custom:checked + .radio-custom-label:before,
 .blue2-skin .btn.pop-login,
 .blue2-skin .single-widgets.widget_search form button,
 .blue2-skin .single-widgets.widget_tags ul li a:hover,
 .blue2-skin .single-widgets.widget_tags ul li a:focus,
-.blue2-skin .pagination>.active>a,
-.blue2-skin .pagination>.active>a:focus,
-.blue2-skin .pagination>.active>a:hover,
-.blue2-skin .pagination>.active>span,
-.blue2-skin .pagination>.active>span:focus,
-.blue2-skin .pagination>.active>span:hover,
-.blue2-skin .pagination>li>a:focus,
-.blue2-skin .pagination>li>a:hover {
-    background-color: #0176ff;
-    background: #0176ff;
+.blue2-skin .pagination > .active > a,
+.blue2-skin .pagination > .active > a:focus,
+.blue2-skin .pagination > .active > a:hover,
+.blue2-skin .pagination > .active > span,
+.blue2-skin .pagination > .active > span:focus,
+.blue2-skin .pagination > .active > span:hover,
+.blue2-skin .pagination > li > a:focus,
+.blue2-skin .pagination > li > a:hover {
+  background-color: #0176ff;
+  background: #0176ff;
 }
 
 .blue2-skin a.link:hover,
@@ -1199,7 +1379,7 @@ a:focus,
 .blue2-skin .bl-continue,
 .blue2-skin .header-dark-transparent.header-fixed .attributes li.submit-attri a,
 .blue2-skin nav .menu li a.active,
-.blue2-skin nav .menu li.dropdown.open>a,
+.blue2-skin nav .menu li.dropdown.open > a,
 .blue2-skin nav .menu .mg-menu li a i,
 .blue2-skin nav .menu li a:hover,
 .blue2-skin .recommended .pr-value,
@@ -1212,21 +1392,30 @@ a:focus,
 .blue2-skin span.mod-close,
 .blue2-skin .blog-page .blog-details blockquote .icon,
 .blue2-skin .single-post-pagination .post-pagination-center-grid a,
-.blue2-skin .blog-page .blog-details .comment-area .all-comments article .comment-details .comment-meta .comment-left-meta .comment-date,
+.blue2-skin
+  .blog-page
+  .blog-details
+  .comment-area
+  .all-comments
+  article
+  .comment-details
+  .comment-meta
+  .comment-left-meta
+  .comment-date,
 .blue2-skin .cn-info-icon i,
 .blue2-skin .client-info h5,
 .blue2-skin .listing-card-info-price {
-    color: #0176ff;
+  color: #0176ff;
 }
 
-.blue2-skin .pagination>.active>a,
-.blue2-skin .pagination>.active>a:focus,
-.blue2-skin .pagination>.active>a:hover,
-.blue2-skin .pagination>.active>span,
-.blue2-skin .pagination>.active>span:focus,
-.blue2-skin .pagination>.active>span:hover,
-.blue2-skin .pagination>li>a:focus,
-.blue2-skin .pagination>li>a:hover,
+.blue2-skin .pagination > .active > a,
+.blue2-skin .pagination > .active > a:focus,
+.blue2-skin .pagination > .active > a:hover,
+.blue2-skin .pagination > .active > span,
+.blue2-skin .pagination > .active > span:focus,
+.blue2-skin .pagination > .active > span:hover,
+.blue2-skin .pagination > li > a:focus,
+.blue2-skin .pagination > li > a:hover,
 .blue2-skin .pagination li:first-child a,
 .blue2-skin .range-slider .ui-slider .ui-slider-handle,
 .blue2-skin .attributes li.submit-attri.theme-log a,
@@ -1249,15 +1438,15 @@ a:focus,
 .blue2-skin .btn.pop-login,
 .blue2-skin .single-widgets.widget_tags ul li a:hover,
 .blue2-skin .single-widgets.widget_tags ul li a:focus {
-    border-color: #0176ff;
+  border-color: #0176ff;
 }
 
 .blue2-skin li.login-attri.theme-log a {
-    box-shadow: 0 8px 5px rgba(1, 118, 255, 0 .2);
-    -webkit-box-shadow: 0 8px 5px rgba(1, 118, 255, 0.2);
+  box-shadow: 0 8px 5px rgba(1, 118, 255, 0 0.2);
+  -webkit-box-shadow: 0 8px 5px rgba(1, 118, 255, 0.2);
 }
 
 .blue2-skin .btn.btn-theme-light,
 .blue2-skin .theme-bg-light {
-    background: rgba(1, 118, 255, 0.1);
+  background: rgba(1, 118, 255, 0.1);
 }

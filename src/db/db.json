@@ -523,6 +523,35 @@
     }
   ],
   "contacts": [],
-  "comments": [{ "id": 1, "teacherId": "1", "meesage": "lorem" }],
+  "comments": [
+    {
+      "id": "bae1b929-6a3f-4bfb-88b9-e2e585375e78",
+      "message": "یک متن تستی ",
+      "userId": "1",
+      "bookId": "1",
+      "date": "۲۶ اردیبهشت ۱۴۰۳ ساعت ۲۰:۴۱"
+    },
+    {
+      "id": "f4f2432f-acd5-4553-bc52-d149d6a486c2",
+      "message": "یک کامنت دیگر",
+      "userId": "1",
+      "bookId": "1",
+      "date": "۲۶ اردیبهشت ۱۴۰۳ ساعت ۲۰:۵۱"
+    },
+    {
+      "id": "f4abf2b4-95b2-413f-9297-1587e9dcb771",
+      "message": "درست بشو ....",
+      "userId": "1",
+      "bookId": "1",
+      "date": "۲۶ اردیبهشت ۱۴۰۳ ساعت ۲۰:۵۸"
+    },
+    {
+      "id": "eeeabf90-29ba-4256-a8c4-9d35570e42f4",
+      "message": "درست شد .....",
+      "userId": "1",
+      "bookId": "1",
+      "date": "۲۶ اردیبهشت ۱۴۰۳ ساعت ۲۱:۱۵"
+    }
+  ],
   "newsLetterEmails": []
 }
