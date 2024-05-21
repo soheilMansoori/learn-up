@@ -42,7 +42,7 @@ export default function Navbar() {
     }
     return (
         <>
-            <div className={`header header-light  ${isFixNavbar ? "header-fixed" : "head-shadow"}`}>
+            <div className={`header header-light  ${isFixNavbar && "header-fixed head-shadow"}`}>
                 <div className="container-fluid">
                     <nav className={`navigation  ${windowWidth > 1400 ? "navigation-landscape" : "navigation-portrait"}`}>
                         {/* logo and menu icon */}
